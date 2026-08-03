@@ -1,0 +1,5 @@
+# app-ads.txt — RamPublish / Pokericabra Trainee
+# Authorized Sellers for Apps (IAB Tech Lab). Declares who may sell ad
+# inventory in our apps. Must be served from the ROOT of the developer
+# website listed on the Google Play store listing.
+google.com, pub-8658089738057864, DIRECT, f08c47fec0942fa0
