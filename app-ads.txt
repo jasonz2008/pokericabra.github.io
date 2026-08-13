@@ -19,10 +19,6 @@ facebook.com, 1540593867213987, DIRECT, c3e20eee3f780d68
 
 # ---------------------------------------------------------------------------
 # Unity Ads / LevelPlay
-# Generated block, pasted verbatim from Unity Monetization Dashboard ->
-# Setup -> Organization Settings -> App-ads.txt -> "Show full list".
-# Order preserved so this section can be diffed against the dashboard output
-# when Unity adds or drops demand partners. Do not hand-edit; regenerate.
 # ---------------------------------------------------------------------------
 
 pubmatic.com, 167130, RESELLER, 5d62403b186f2ace
