@@ -12,7 +12,7 @@ ownerdomain=pokericabra.com
 # ---------------------------------------------------------------------------
 
 # Google AdMob
-google.com, pub-8658089738057864, DIRECT, f08c47fec0942fa0
+google.com, pub-9169342425541005, DIRECT, f08c47fec0942fa0
 
 # Meta Audience Network
 facebook.com, 1540593867213987, DIRECT, c3e20eee3f780d68
