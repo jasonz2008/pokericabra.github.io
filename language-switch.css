@@ -1,0 +1,14 @@
+/* The indicator stays mounted while language content changes. */
+.languages{position:relative;isolation:isolate;display:grid;grid-template-columns:1fr 1fr;gap:0;width:160px;flex:0 0 160px;padding:4px;border:1px solid #d1dcd6;border-radius:11px;background:#fcfdfc;overflow:hidden}
+.languages::before{content:'';position:absolute;left:4px;top:4px;bottom:4px;width:calc((100% - 8px)/2);background:#193e35;border-radius:6px;z-index:0;transform:translateX(0);transition:transform 240ms cubic-bezier(.2,.75,.3,1)}
+.languages:has([data-lang="zh-Hant"][aria-pressed="true"])::before{transform:translateX(100%)}
+.languages button[data-lang]{position:relative;z-index:1;display:block;min-height:36px;padding:8px 6px;font-size:12px;font-weight:500;color:#193e35;white-space:nowrap;border:0;border-radius:6px;background:transparent;transition:color 160ms;box-shadow:none}
+.languages button[data-lang][aria-pressed="true"]{background:transparent;color:#fff}
+.languages button[data-lang]:hover{background:transparent;color:#006849}
+.languages button[data-lang][aria-pressed="true"]:hover{color:#fff}
+.languages button[data-lang]:focus-visible{outline:2px solid #6aad95;outline-offset:-2px}
+.resume-active .languages{background:#141b19;border-color:#4c6058}
+.resume-active .languages button[data-lang]{color:#bfd1c9}
+.resume-active .languages button[data-lang][aria-pressed="true"]{background:transparent;color:#fff}
+@media(max-width:600px){.languages{width:145px;flex-basis:145px}.languages button[data-lang]{font-size:11px;min-height:32px;padding:7px 4px}}
+@media(prefers-reduced-motion:reduce){.languages::before,.languages button[data-lang]{transition:none}}

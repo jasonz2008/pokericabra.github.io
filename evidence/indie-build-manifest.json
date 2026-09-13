@@ -1,0 +1,20 @@
+[
+  {
+    "product": "demo",
+    "file": "Indie Game Dev Clicker Demo.exe",
+    "bytes": 512755728,
+    "sha256": "A1AF950D506221C2ECD7F575DAF9FC35E65E10FAB02E610799C9B1D391B17B26",
+    "package_checks": 58,
+    "failures": 0,
+    "built_utc": "2026-09-12T14:27:49.9145828Z"
+  },
+  {
+    "product": "full",
+    "file": "Indie Game Dev Clicker.exe",
+    "bytes": 512755728,
+    "sha256": "2E20B27ECD3F029B6BE751CF749C7D16D8DE86351D2A84BA913AD9C302F41F93",
+    "package_checks": 58,
+    "failures": 0,
+    "built_utc": "2026-09-12T14:28:10.6216842Z"
+  }
+]

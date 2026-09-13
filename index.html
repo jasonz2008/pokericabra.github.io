@@ -1,51 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RamPublish</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.65; max-width: 700px; margin: 0 auto; padding: 48px 20px 80px;
-    color: #1b1b1b; background: #fff;
-  }
-  @media (prefers-color-scheme: dark) { body { color: #e8e8e8; background: #121212; } }
-  h1 { font-size: 1.9rem; margin-bottom: 2px; }
-  .sub { color: #6b6b6b; margin-top: 0; }
-  h2 { font-size: 1.15rem; margin-top: 36px; }
-  ul { padding-left: 20px; }
-  li { margin-bottom: 8px; }
-  a { color: #1565c0; }
-  footer { margin-top: 48px; font-size: 0.88rem; color: #6b6b6b; }
-</style>
-</head>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jason Zhong — Product & interaction design</title><meta name="description" content="Jason Zhong's selected work: Market Lens financial dashboard, Pokericabra Trainee, current project concepts and résumé."><meta name="theme-color" content="#f5f5f7"><link rel="icon" href="assets/mark.svg"><link rel="stylesheet" href="site.css"><link rel="stylesheet" href="refinement.css"><link rel="stylesheet" href="language-switch.css"><link rel="stylesheet" href="indie-evolution.css"><link rel="stylesheet" href="mobile.css"><script defer src="shared.js"></script><script defer src="market-data.js"></script><script defer src="market-model.js"></script><script defer src="ai-dashboard.js"></script><script defer src="market.js"></script><script defer src="resume.js"></script><script defer src="project-process.js"></script><script defer src="indie-evolution.js"></script><script defer src="site.js"></script></head>
 <body>
+<!-- THESIS: Show the interfaces; let the work explain the designer.
+OWN-WORLD: User-pinned Apple reference: white, cool silver, near-black type, blue actions and generous product imagery. No green folio or essay layout.
+STORY: Start with a current-data market workspace, inspect the released app and current concepts, then read the résumé.
+FIRST VIEWPORT: Contact details, four flat project tabs and a finance dashboard with an explicitly dated stock heatmap.
+FORM: Four user-specified panels. Piano-black résumé with hardware-specification rows. User-pinned Apple direction overrides prior seed 18785d9c.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+<a class="skip" href="#project-content" data-en="Skip to project" data-zh="跳至作品">Skip to project</a>
+<header class="global-header"><div class="header-inner"><a class="name" href="index.html">Jason Zhong</a><span class="profession" data-en="Product. Design. Development." data-zh="產品 · 設計 · 開發">Product. Design. Development.</span><div class="header-contact"><a href="tel:+85269485304">+852 6948 5304</a><a href="mailto:jasonzhong2008@yahoo.ca">jasonzhong2008@yahoo.ca</a></div><div class="languages" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="zh-Hant" aria-pressed="false">繁體中文</button></div></div></header>
+<nav class="project-nav" role="tablist" aria-label="Projects" data-en-aria="Projects" data-zh-aria="作品">
+<button type="button" id="tab-market" role="tab" data-project="market" aria-controls="project-content" aria-selected="true"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="M4 4v20h21M8 18l5-6 5 2 7-9"/><path d="M20 5h5v5"/></svg><span>Market Lens</span></button>
+<button type="button" id="tab-poker" role="tab" data-project="poker" aria-controls="project-content" aria-selected="false" tabindex="-1"><svg viewBox="0 0 28 28" aria-hidden="true"><rect x="7" y="3" width="15" height="21" rx="3"/><path d="m7 7-4 1 1 17a2 2 0 0 0 2 2l13-1M14.5 9l4 5-4 5-4-5z"/></svg><span data-en="Released Mobile App" data-zh="已發佈手機應用程式">Released Mobile App</span></button>
+<button type="button" id="tab-indie" role="tab" data-project="indie" aria-controls="project-content" aria-selected="false" tabindex="-1"><svg viewBox="0 0 28 28" aria-hidden="true"><rect x="3" y="4" width="22" height="16" rx="3"/><path d="M9 25h10m-5-5v5M9 10l-3 2 3 2m10-4 3 2-3 2m-7 1 2-6"/></svg><span data-en="Current Project" data-zh="目前項目">Current Project</span></button>
+<button type="button" id="tab-resume" role="tab" data-project="resume" aria-controls="project-content" aria-selected="false" tabindex="-1"><svg viewBox="0 0 28 28" aria-hidden="true"><rect x="5" y="3" width="18" height="22" rx="3"/><path d="M10 17h8m-8 4h6"/><circle cx="14" cy="10" r="3"/></svg><span data-en="Résumé & AI" data-zh="履歷及 AI">Résumé & AI</span></button>
+</nav>
+<div class="project-scroll">
+<main id="project-content" role="tabpanel" aria-labelledby="tab-market" tabindex="0"></main>
+<footer class="site-footer"><div><strong>Jason Zhong</strong><span data-en="5 years data analysis. 2 years AI development." data-zh="5 年數據分析經驗。2 年 AI 項目開發經驗。">5 years data analysis. 2 years AI development.</span></div><div><a href="mailto:jasonzhong2008@yahoo.ca">jasonzhong2008@yahoo.ca</a><a href="tel:+85269485304">+852 6948 5304</a></div></footer>
+<noscript><p class="noscript">Please enable JavaScript to explore the projects. 請啟用 JavaScript 以探索作品。 <a href="mailto:jasonzhong2008@yahoo.ca">Contact Jason</a></p></noscript>
+</div>
+<dialog id="image-viewer" class="image-viewer"><button type="button" class="close-viewer" aria-label="Close image" data-en-aria="Close image" data-zh-aria="關閉圖片"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button><img src="assets/pokericabra-1.jpg" alt=""><p></p></dialog>
 
-<h1>RamPublish</h1>
-<p class="sub">Independent game development · Hong Kong SAR</p>
-
-<h2>Pokericabra Trainee</h2>
-<p>A puzzle game where falling blocks are made of playing cards. Clear a line and the
-best poker hand inside it is scored against the enemy in front of you. Available on
-Google Play.</p>
-
-<h2>Legal and privacy</h2>
-<ul>
-  <li><a href="delete-data.html">Delete your data</a></li>
-  <li><a href="privacy-policy.html">Privacy Policy</a></li>
-  <li><a href="terms-of-service.html">Terms of Service</a></li>
-</ul>
-
-<h2>Contact</h2>
-<p>Questions, support and privacy requests:
-<a href="mailto:support@pokericabra.com">support@pokericabra.com</a></p>
-
-<footer>
-  RamPublish · A sole proprietorship registered in the Hong Kong SAR<br>
-  Last updated: 3 August 2026
-</footer>
-
-</body>
-</html>
+</body></html>

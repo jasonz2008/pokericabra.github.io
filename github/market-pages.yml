@@ -1,0 +1,57 @@
+name: Refresh market data and publish portfolio
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '17 6 * * *'
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: portfolio-pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Find portfolio
+        id: portfolio
+        shell: bash
+        run: |
+          for directory in portfolio docs/portfolio docs/website/portfolio .; do
+            if [ -f "$directory/scripts/update_market.py" ]; then
+              echo "directory=$directory" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+          done
+          echo 'Portfolio updater not found' >&2
+          exit 1
+      - name: Refresh public daily prices
+        run: python '${{ steps.portfolio.outputs.directory }}/scripts/update_market.py'
+      - name: Check published data
+        run: node '${{ steps.portfolio.outputs.directory }}/check-market.cjs'
+      - uses: actions/configure-pages@v5
+      - name: Preserve the existing website
+        shell: bash
+        env:
+          SITE_ROOT: ${{ vars.PAGES_SITE_ROOT || '.' }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/portfolio-site"
+          rsync -a --exclude='.git' --exclude='.github' --exclude='node_modules' --exclude='*.zip' "$SITE_ROOT/" "$RUNNER_TEMP/portfolio-site/"
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/portfolio-site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

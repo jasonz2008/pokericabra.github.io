@@ -1,0 +1,162 @@
+{
+  "source": "Design artifacts supplied by Jason Zhong; recorded interface iterations and AI concepts, 11–13 September 2026, plus earlier prototype captures.",
+  "status": "Final Result identifies the implemented design shown in this case study. The product is still in development and is not publicly released. Calendar figures are simulation data; AI concept figures are illustrative.",
+  "assets": [
+    {
+      "asset": "assets/iteration/creation-legacy.png",
+      "originalFile": "desktop-project.png",
+      "kind": "Native UI capture",
+      "sha256": "4f26719164e350a6ca3f052456a6729fba5256c4850541db3165a947a62e253f"
+    },
+    {
+      "asset": "assets/iteration/creation-ai.png",
+      "originalFile": "05-create-project-width-fit.png",
+      "kind": "AI concept",
+      "sha256": "c49610f465098d299e4a9344731797c5a2534ea732ae9868f9142dbe124b82a6"
+    },
+    {
+      "asset": "assets/iteration/creation-alpha.png",
+      "originalFile": "codex-clipboard-d7f7f968-e7f6-4879-9bd3-9f7e3f9f8419.png",
+      "kind": "Working interface capture",
+      "sha256": "eaa54ed9dc4cb8281a7d167c898838c0817ba8c40108fb6c24913f8d15ad8e1f"
+    },
+    {
+      "asset": "assets/iteration/creation-current.png",
+      "originalFile": "selected-pills.png",
+      "kind": "Native UI capture",
+      "sha256": "2d4247c1a79d1aabf396342e5877540ed919853a8bf3c35091c10e48b4272521"
+    },
+    {
+      "asset": "assets/iteration/creation-overflow.png",
+      "originalFile": "wide-overflow.png",
+      "kind": "Native UI capture",
+      "sha256": "5ac799cdab34091db3f0d136e545d9daf35baba47839b84340eeefd35def78f8"
+    },
+    {
+      "asset": "assets/iteration/options-before.png",
+      "originalFile": "before-picker.png",
+      "kind": "Working interface capture",
+      "sha256": "4e518c6339120ad27c9c1dfb5fa6ed38649ad499ae810c77d466fae1b281d748"
+    },
+    {
+      "asset": "assets/iteration/genre-ai.png",
+      "originalFile": "codex-clipboard-80c55b68-e5eb-43c6-9c5b-9d3357cd9376.png",
+      "kind": "AI concept",
+      "sha256": "a8d281b58644da46b04dcbc238e93b60a294bf1b21fa9b9d5dff47c2315e4ee5"
+    },
+    {
+      "asset": "assets/iteration/genre-current.png",
+      "originalFile": "genre-preview.png",
+      "kind": "Native UI capture",
+      "sha256": "d6baaca7c2117a86e6d80db66a707b66761c6e9d21b18f3cc042267517b3a3bc"
+    },
+    {
+      "asset": "assets/iteration/navigation-before.png",
+      "originalFile": "desktop-hub.png",
+      "kind": "Working interface capture",
+      "sha256": "275b700ace8131a665fa182998c31eafd601d021f853cbdbf649782e7ddf4d06"
+    },
+    {
+      "asset": "assets/iteration/ideas-ai.png",
+      "originalFile": "exec-c759ae93-f6d7-46c2-80bf-6532403ef443.png",
+      "kind": "AI concept",
+      "sha256": "1d9eab01da5c1e6e2e6c64e982f9596e6d49919853992e33ab889b562fc3e1c6"
+    },
+    {
+      "asset": "assets/iteration/ideas-first.png",
+      "originalFile": "desktop.png",
+      "kind": "Native UI capture",
+      "sha256": "9a756e12fb9e38cb0792e8f0cf3b47fda159ecd22f5397ea49ccd1657c3f5184"
+    },
+    {
+      "asset": "assets/iteration/ideas-current.png",
+      "originalFile": "menu-preview.png",
+      "kind": "Native UI capture",
+      "sha256": "2fa3d71a6de512c5261aeae42c9a30d5219519f04d6bd654721bac0610a671ab"
+    },
+    {
+      "asset": "assets/iteration/calendar-finances-ai.png",
+      "originalFile": "exec-fe391965-497e-428c-a91a-fb60e89f89ef.png",
+      "kind": "AI concept",
+      "sha256": "27be0357881dc1389d5e4f3f45ac132edf320195cf9e61a35592192d6d9baffd"
+    },
+    {
+      "asset": "assets/iteration/calendar-finances-final.png",
+      "originalFile": "06-financial-reference.png",
+      "kind": "Working interface capture",
+      "sha256": "e3224fc75f83712046d884e4c627ecdb6906f9a88a4f92b366fa4db16a596438"
+    },
+    {
+      "asset": "assets/iteration/calendar-schedule-before.png",
+      "originalFile": "11-calendar-dates.png",
+      "kind": "Working interface capture",
+      "sha256": "1f1875e0ad8349261a81482230ce28745bac4b526f8a651495601e8c486da565"
+    },
+    {
+      "asset": "assets/iteration/calendar-schedule-ai.png",
+      "originalFile": "exec-9e59c2ac-2c6c-47c1-9a59-f8d686aaddde.png",
+      "kind": "AI concept",
+      "sha256": "f211333866f848376d54a48a1c4ef9f67921917ff5c62e17494df42429a1821c"
+    },
+    {
+      "asset": "assets/iteration/calendar-schedule-final.png",
+      "originalFile": "01-events.png",
+      "kind": "Working interface capture",
+      "sha256": "a2b40b2af2c94af1c02bc3b5c3e0f1fcbcd2e39be8d64c543528368f9469b8e8"
+    },
+    {
+      "asset": "assets/iteration/sales-concept.png",
+      "originalFile": "codex-clipboard-f2f32040-4631-4322-8e29-96df4e380cbb.png",
+      "kind": "AI concept",
+      "sha256": "f4aa27849282fc09a7a7b98522d6f4af47294034afadc1f8fb5b0676543c87e1"
+    },
+    {
+      "asset": "assets/iteration/sales-history-concept.png",
+      "originalFile": "codex-clipboard-0986a64c-0225-4778-81bc-3e82e7a7c2e1.png",
+      "kind": "AI concept",
+      "sha256": "cb079e1aac7882e0e641ad4e94dc842731be021f8f49342978ca04f4373a493e"
+    },
+    {
+      "asset": "assets/iteration/development-research.png",
+      "originalFile": "codex-clipboard-1716dcda-08fb-4008-8b2e-44896e5287c1.png",
+      "kind": "User-supplied development screen/layout",
+      "sha256": "f277494de24e35c05cb24443d3a9aa3554adfc3c589e54bc70b1e990cf9c0466"
+    },
+    {
+      "asset": "assets/iteration/development-mobile-workspace.png",
+      "originalFile": "codex-clipboard-870167b8-d8e8-45ee-926a-293efce331b8.png",
+      "kind": "User-supplied development screen/layout",
+      "sha256": "b2b3763454d528602f05170527d9625124fc0b61da26a11d6e79e0ce9da60f48"
+    },
+    {
+      "asset": "assets/iteration/development-map.png",
+      "originalFile": "codex-clipboard-7e3ce684-0a17-4ada-a924-3bf38629ddfb.png",
+      "kind": "User-supplied development screen/layout",
+      "sha256": "b563e6af5690d69e112284f9575ec33d8eae9a877bd9b0c4ed3be9dd45381f1f"
+    },
+    {
+      "asset": "assets/iteration/development-sales.png",
+      "originalFile": "codex-clipboard-11ce4b55-9ec9-4f4a-9c59-ff7205bce060.png",
+      "kind": "User-supplied development screen/layout",
+      "sha256": "994da3fc418de1d2355e4cdfd8a73d3edb21fada76f4c96bda7820158cda0ac8"
+    },
+    {
+      "asset": "assets/iteration/development-status.png",
+      "originalFile": "codex-clipboard-720bbb5a-efd9-4430-aa9f-8b3fe7f0d625.png",
+      "kind": "User-supplied development screen/layout",
+      "sha256": "5e26eed2efc67d8135a7bea935f9564451351601afce8ff99c7a5974e682c8f6"
+    },
+    {
+      "asset": "assets/iteration/development-settings.png",
+      "originalFile": "codex-clipboard-e6f2a392-aa1c-4881-b073-97dcfb167911.png",
+      "kind": "User-supplied development screen/layout",
+      "sha256": "51e5db05155edf4a62b4d2d3232cc169b9b983ff9b95bbee059a35e29cc37bf1"
+    },
+    {
+      "asset": "assets/iteration/development-mobile-layout.png",
+      "originalFile": "codex-clipboard-241cd929-39cd-41bc-9587-a96798dfd329.png",
+      "kind": "User-supplied development screen/layout",
+      "sha256": "84b26309c113da0de32f8a648198a61a59aa08a787b8e5d256c8cd919e8641bb"
+    }
+  ]
+}
