@@ -1,7 +1,7 @@
 'use strict';
 // Portfolio language describes UI decisions; source records stay in the evidence manifest.
 window.IndieEvolution=(()=>{
-  const state={feature:0,versions:[3,2,3,0]};
+  const state={feature:0,versions:[0,0,0,0]};
   const arrow='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>';
   const actual=['Working interface','實際介面'];
   const concept=['AI-generated concept','AI 生成概念'];
@@ -158,13 +158,13 @@ window.IndieEvolution=(()=>{
       <div class="evolution-features" role="tablist" aria-label="${t('UI design examples','UI 設計案例')}">${features.map((x,n)=>`<button type="button" id="evolution-feature-${n}" role="tab" data-evolution-feature="${n}" aria-selected="${n===state.feature}" aria-controls="evolution-case" tabindex="${n===state.feature?0:-1}">${t(...x.name)}</button>`).join('')}</div>
       <div id="evolution-case" role="tabpanel" aria-labelledby="evolution-feature-${state.feature}">
         <div class="evolution-purpose"><strong>${t('The goal','設計目標')}</strong><p>${t(...f.goal)}</p></div>
-        <div class="evolution-version-heading"><span>${t('Compare the designs','比較設計')}</span><small>${t('Swipe to explore','滑動查看')}</small></div>
+        <div class="evolution-workspace"><div class="evolution-rail"><div class="evolution-version-heading"><span>${t('Compare the designs','比較設計')}</span><small>${t('Swipe to explore','滑動查看')}</small></div>
         <div class="evolution-versions" role="tablist" aria-label="${t('Design versions','設計版本')}">${f.versions.map((x,n)=>`<button type="button" id="evolution-version-${n}" role="tab" data-evolution-version="${n}" aria-selected="${n===i}" aria-controls="evolution-artifact" tabindex="${n===i?0:-1}"><img src="assets/iteration/${x.file}" alt="" loading="lazy"><span>${t(...x.name)}</span></button>`).join('')}</div>
-        <div class="evolution-artifact" id="evolution-artifact" role="tabpanel" aria-labelledby="evolution-version-${i}">
+        </div><div class="evolution-artifact" id="evolution-artifact" role="tabpanel" aria-labelledby="evolution-version-${i}">
           <div class="evolution-context"><div class="evolution-stage-copy"><h3>${t(...v.title)}</h3><p>${t(...v.detail)}</p></div><div class="evolution-decision"><h3>${t('My design decision','我的設計決策')}</h3><p>${t(...(v.decision||f.decision))}</p></div></div>
           <div class="evolution-tools">${v.extra?`<button type="button" class="evolution-extra" data-image="iteration/${v.extra}" data-caption="${t(...v.extraLabel)}">${t(...v.extraLabel)}${arrow}</button>`:'<span></span>'}<div class="evolution-navigation"><button type="button" data-evolution-version="${Math.max(0,i-1)}" ${i===0?'disabled':''} aria-label="${t('Previous version','上一版本')}">${arrow}</button><span>${i+1} / ${f.versions.length}</span><button type="button" data-evolution-version="${Math.min(f.versions.length-1,i+1)}" ${i===f.versions.length-1?'disabled':''} aria-label="${t('Next version','下一版本')}">${arrow}</button></div></div>
           <figure><button type="button" class="image-button" data-image="iteration/${v.file}" data-caption="${t(...v.type)} — ${t(...v.title)}"><img src="assets/iteration/${v.file}" alt="${t(...v.title)} ${t(...v.detail)}" loading="lazy"></button><figcaption><span>${t(...v.type)}</span><button type="button" data-image="iteration/${v.file}" data-caption="${t(...v.type)} — ${t(...v.title)}">${t('Enlarge','放大查看')}${arrow}</button></figcaption></figure>
-        </div><div class="evolution-bottom"><p>${t('Working screens from a product in development. AI concepts are labelled.','開發中產品的實際介面；AI 概念圖已另行標示。')}</p></div>
+        </div></div><div class="evolution-bottom"><p>${t('Working screens from a product in development. AI concepts are labelled.','開發中產品的實際介面；AI 概念圖已另行標示。')}</p></div>
       </div></section>`;
   }
   function mount(root){
@@ -175,7 +175,7 @@ window.IndieEvolution=(()=>{
       const old=root.querySelector('.evolution');if(!old)return;
       const scroll=old.querySelector('.evolution-versions').scrollLeft;
       const featureScroll=old.querySelector('.evolution-features').scrollLeft;
-      if(feature!==undefined)state.feature=Number(feature);
+      if(feature!==undefined){state.feature=Number(feature);state.versions[state.feature]=0;}
       if(version!==undefined)state.versions[state.feature]=Number(version);
       old.outerHTML=render();
       const next=root.querySelector('.evolution');
@@ -188,8 +188,8 @@ window.IndieEvolution=(()=>{
       }
     });
     root.addEventListener('keydown',e=>{
-      if(!e.target.matches('.evolution [role=tab]')||!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;
-      e.preventDefault();const tabs=[...e.target.parentElement.querySelectorAll('[role=tab]')],n=tabs.indexOf(e.target),next=e.key==='Home'?0:e.key==='End'?tabs.length-1:(n+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length;tabs[next].click();
+      if(!e.target.matches('.evolution [role=tab]')||!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(e.key))return;
+      e.preventDefault();const tabs=[...e.target.parentElement.querySelectorAll('[role=tab]')],n=tabs.indexOf(e.target),next=e.key==='Home'?0:e.key==='End'?tabs.length-1:(n+(['ArrowRight','ArrowDown'].includes(e.key)?1:tabs.length-1))%tabs.length;tabs[next].click();
     });
   }
   return{render,mount};
