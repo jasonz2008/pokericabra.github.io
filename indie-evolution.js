@@ -1,7 +1,7 @@
 'use strict';
 // Portfolio language describes UI decisions; source records stay in the evidence manifest.
 window.IndieEvolution=(()=>{
-  const state={feature:0,versions:[0,0,0,0]};
+  const state={feature:0,versions:[3,2,3,4]};
   const arrow='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>';
   const actual=['Working interface','實際介面'];
   const concept=['AI-generated concept','AI 生成概念'];
@@ -158,7 +158,7 @@ window.IndieEvolution=(()=>{
       <div class="evolution-features" role="tablist" aria-label="${t('UI design examples','UI 設計案例')}">${features.map((x,n)=>`<button type="button" id="evolution-feature-${n}" role="tab" data-evolution-feature="${n}" aria-selected="${n===state.feature}" aria-controls="evolution-case" tabindex="${n===state.feature?0:-1}">${t(...x.name)}</button>`).join('')}</div>
       <div id="evolution-case" role="tabpanel" aria-labelledby="evolution-feature-${state.feature}">
         <div class="evolution-purpose"><strong>${t('The goal','設計目標')}</strong><p>${t(...f.goal)}</p></div>
-        <div class="evolution-workspace"><div class="evolution-rail"><div class="evolution-version-heading"><span>${t('Compare the designs','比較設計')}</span><small>${t('Swipe to explore','滑動查看')}</small></div>
+        <div class="evolution-workspace"><div class="evolution-rail"><div class="evolution-version-heading"><span>${t('Design versions','設計版本')}</span><small>${t('Swipe to explore','滑動查看')}</small></div>
         <div class="evolution-versions" role="tablist" aria-label="${t('Design versions','設計版本')}">${f.versions.map((x,n)=>`<button type="button" id="evolution-version-${n}" role="tab" data-evolution-version="${n}" aria-selected="${n===i}" aria-controls="evolution-artifact" tabindex="${n===i?0:-1}"><img src="assets/iteration/${x.file}" alt="" loading="lazy"><span>${t(...x.name)}</span></button>`).join('')}</div>
         </div><div class="evolution-artifact" id="evolution-artifact" role="tabpanel" aria-labelledby="evolution-version-${i}">
           <div class="evolution-context"><div class="evolution-stage-copy"><h3>${t(...v.title)}</h3><p>${t(...v.detail)}</p></div><div class="evolution-decision"><h3>${t('My design decision','我的設計決策')}</h3><p>${t(...(v.decision||f.decision))}</p></div></div>
@@ -175,7 +175,7 @@ window.IndieEvolution=(()=>{
       const old=root.querySelector('.evolution');if(!old)return;
       const scroll=old.querySelector('.evolution-versions').scrollLeft;
       const featureScroll=old.querySelector('.evolution-features').scrollLeft;
-      if(feature!==undefined){state.feature=Number(feature);state.versions[state.feature]=0;}
+      if(feature!==undefined){state.feature=Number(feature);state.versions[state.feature]=features[state.feature].versions.length-1;}
       if(version!==undefined)state.versions[state.feature]=Number(version);
       old.outerHTML=render();
       const next=root.querySelector('.evolution');

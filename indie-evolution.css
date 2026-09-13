@@ -98,3 +98,13 @@
 }
 @media print{.evolution-workspace .evolution-artifact{height:auto}.evolution-workspace figure>.image-button{height:400px}}
 
+
+/* Feature navigation is distinct from the photographic version rail. */
+.evolution-features{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;padding:8px;background:#edf1f5;border:0;border-radius:12px;margin-bottom:24px}
+.evolution-features button{padding:12px 8px;border:0;border-radius:7px;white-space:normal;font-weight:650;color:#455468}
+.evolution-features button[aria-selected=true]{background:#193e35;color:#fff;border:0}
+.evolution-features button:not([aria-selected=true]):hover{background:#dce5e9;color:#193e35}
+.process-teaser{width:fit-content;padding:12px 20px;background:#edf4f1;border-radius:12px;color:#193e35}
+.process-teaser span{font-size:15px;font-weight:600;line-height:1.5;cursor:default}
+.process-teaser>svg{stroke:#52776b}
+@media(max-width:760px){.evolution-features{gap:4px;padding:5px}.evolution-features button{font-size:12px;padding:10px 4px}.process-teaser{padding:10px 12px}.process-teaser span{font-size:12px}}

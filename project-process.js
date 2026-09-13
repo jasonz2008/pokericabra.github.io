@@ -19,7 +19,7 @@ window.ProjectProcess=(()=>{
       {title:['Working builds. Public launch ahead.','已有可運行版本，準備走向公開發佈。'],copy:['Version Alpha is already running. Interface improvements continue, with unfinished features clearly labelled. Public launch is pending.','初版已可運行。介面持續改善，未完成的功能清楚標示；尚待公開上線。'],image:'iteration/ideas-current.png',caption:['Working tools menu · Some features pending','實際工具選單 · 部分功能待完成'],facts:[['Native UI','原生介面'],['Ongoing development','持續開發'],['Launch pending','待公開上線']],pending:true}
     ]
   };
-  function teaser(indie){const key=indie?'indie':'poker';return `<div class="process-teaser" role="group" aria-label="${t('Explore the complete product workflow','探索完整產品流程')}">${labels.map((label,i)=>`<button type="button" data-process-jump="${i}" data-process-key="${key}" aria-controls="build-process">${t(...label)}</button>${i<4?arrow:''}`).join('')}</div>`;}
+  function teaser(indie){return `<div class="process-teaser" role="group" aria-label="${t('Product development workflow','產品開發流程')}">${labels.map((label,i)=>`<span>${t(...label)}</span>${i<4?arrow:''}`).join('')}</div>`;}
   function poster(){return `<img src="assets/pokericabra-prototype.png" alt="${t('Playable AI-generated Pokericabra prototype','AI 生成的 Pokericabra 可玩原型')}" width="360" height="575">`;}
   function media(s,indie){
     if(s.prototype)return `<figure class="process-prototype"><div class="prototype-host" data-prototype-host>${poster()}</div><figcaption>${t(...s.caption)}</figcaption></figure>`;
