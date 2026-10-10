@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-10T15:54:52.517Z",
+  "title": "Design System: Drawply & Pokericabra",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Graphite ink",
+        "tonalRamp": [
+          "oklch(15% 0.06 260)",
+          "oklch(26.43% 0.06 260)",
+          "oklch(37.86% 0.06 260)",
+          "oklch(49.29% 0.06 260)",
+          "oklch(60.71% 0.06 260)",
+          "oklch(72.14% 0.06 260)",
+          "oklch(83.57% 0.06 260)",
+          "oklch(95% 0.06 260)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Slate text",
+        "tonalRamp": [
+          "oklch(15% 0.045 260)",
+          "oklch(26.43% 0.045 260)",
+          "oklch(37.86% 0.045 260)",
+          "oklch(49.29% 0.045 260)",
+          "oklch(60.71% 0.045 260)",
+          "oklch(72.14% 0.045 260)",
+          "oklch(83.57% 0.045 260)",
+          "oklch(95% 0.045 260)"
+        ]
+      },
+      "blue": {
+        "role": "primary",
+        "displayName": "Cobalt action",
+        "tonalRamp": [
+          "oklch(15% 0.22 265)",
+          "oklch(26.43% 0.22 265)",
+          "oklch(37.86% 0.22 265)",
+          "oklch(49.29% 0.22 265)",
+          "oklch(60.71% 0.22 265)",
+          "oklch(72.14% 0.22 265)",
+          "oklch(83.57% 0.22 265)",
+          "oklch(95% 0.22 265)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Cool rule",
+        "tonalRamp": [
+          "oklch(15% 0.027 260)",
+          "oklch(26.43% 0.027 260)",
+          "oklch(37.86% 0.027 260)",
+          "oklch(49.29% 0.027 260)",
+          "oklch(60.71% 0.027 260)",
+          "oklch(72.14% 0.027 260)",
+          "oklch(83.57% 0.027 260)",
+          "oklch(95% 0.027 260)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "White paper",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "wash": {
+        "role": "neutral",
+        "displayName": "Pale-blue wash",
+        "tonalRamp": [
+          "oklch(15% 0.021 265)",
+          "oklch(26.43% 0.021 265)",
+          "oklch(37.86% 0.021 265)",
+          "oklch(49.29% 0.021 265)",
+          "oklch(60.71% 0.021 265)",
+          "oklch(72.14% 0.021 265)",
+          "oklch(83.57% 0.021 265)",
+          "oklch(95% 0.021 265)"
+        ]
+      },
+      "red": {
+        "role": "secondary",
+        "displayName": "Vermilion editorial mark",
+        "tonalRamp": [
+          "oklch(15% 0.19 28)",
+          "oklch(26.43% 0.19 28)",
+          "oklch(37.86% 0.19 28)",
+          "oklch(49.29% 0.19 28)",
+          "oklch(60.71% 0.19 28)",
+          "oklch(72.14% 0.19 28)",
+          "oklch(83.57% 0.19 28)",
+          "oklch(95% 0.19 28)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Proposition",
+        "purpose": "Heavy Manrope hero statement."
+      },
+      "headline": {
+        "displayName": "Section heading",
+        "purpose": "Balanced section headings."
+      },
+      "body": {
+        "displayName": "Practical text",
+        "purpose": "Readable explanations."
+      },
+      "label": {
+        "displayName": "Context",
+        "purpose": "Compact captions and notes."
+      }
+    },
+    "shadows": [
+      {
+        "name": "working-surface",
+        "value": "0 20px 50px -24px #32477666",
+        "purpose": "Diffuse elevation around the live annotation frame."
+      }
+    ],
+    "motion": [
+      {
+        "name": "anchor-scroll",
+        "value": "scroll-behavior: smooth",
+        "purpose": "Anchor navigation; switches to auto for prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "intermediate",
+        "value": "1000px"
+      },
+      {
+        "name": "single-column",
+        "value": "760px"
+      },
+      {
+        "name": "compact",
+        "value": "380px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Installation and store actions.",
+      "html": "<a class=\"ds-primary\" href=\"#download\">Install using Codex</a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:13px;border:1px solid transparent;border-radius:10px;padding:15px 21px;font:650 16px \"Segoe UI\",Arial,sans-serif;text-decoration:none;min-height:50px;background:var(--blue,#184beb);color:var(--paper,#fff)}.ds-primary:hover{background:#1039b9}.ds-primary:focus-visible{outline:3px solid var(--red,#d53936);outline-offset:5px}"
+    },
+    {
+      "name": "Secondary action",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "A quieter route into the drawing example.",
+      "html": "<a class=\"ds-secondary\" href=\"#try\">Try drawing <svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 18 18 6M6 6h12v12\"/></svg></a>",
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:13px;border:1px solid transparent;border-radius:10px;padding:15px 21px;font:650 16px \"Segoe UI\",Arial,sans-serif;text-decoration:none;min-height:50px;background:transparent;border-color:#a8b7d1;color:var(--ink,#172848)}.ds-secondary:hover{background:white}.ds-secondary:focus-visible{outline:3px solid var(--red,#d53936);outline-offset:5px}"
+    },
+    {
+      "name": "Product navigation",
+      "kind": "nav",
+      "description": "Semibold destinations and a cobalt installation link.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Products\"><a href=\"#games\">Pokericabra</a><a class=\"ds-about\" href=\"#about\">About Drawply</a><a class=\"ds-get\" href=\"#download\">Get Drawply</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:28px;font:600 14px \"Segoe UI\",Arial,sans-serif;color:var(--ink,#172848)}.ds-nav a{display:inline-flex;padding-block:10px;text-decoration:none;color:inherit}.ds-nav a:hover{text-decoration:underline;text-underline-offset:4px}.ds-nav .ds-get{color:var(--blue,#184beb)}.ds-nav a:focus-visible{outline:3px solid var(--red,#d53936);outline-offset:5px}@media(max-width:760px){.ds-nav{gap:14px;font-size:13px}.ds-nav .ds-about{display:none}}"
+    },
+    {
+      "name": "Working annotation frame",
+      "kind": "custom",
+      "refersTo": "framed-surface",
+      "description": "The elevated shell around the embedded runtime; the preview omits the runtime.",
+      "html": "<section class=\"ds-demo\"><div class=\"ds-title\"><span class=\"ds-dot\"></span>Your result, ready for feedback</div><div class=\"ds-stage\">Annotation workspace</div><div class=\"ds-foot\">Your marks stay in this demo; nothing is sent to an AI.</div></section>",
+      "css": ".ds-demo{background:var(--paper,#fff);border:1px solid #bccbe3;border-radius:16px;box-shadow:0 20px 50px -24px #32477666;overflow:hidden;color:var(--ink,#172848);font:13px \"Segoe UI\",Arial,sans-serif}.ds-title{display:flex;align-items:center;gap:8px;padding:16px 20px;border-bottom:1px solid #e0e5ef;font-weight:600}.ds-dot{width:7px;height:7px;border-radius:50%;background:#297450}.ds-stage{padding:40px 20px;color:var(--muted,#53617b)}.ds-foot{padding:14px 20px;background:#f8faff;border-top:1px solid #e0e5ef;color:var(--muted,#53617b);line-height:1.5}"
+    },
+    {
+      "name": "Game content frame",
+      "kind": "card",
+      "refersTo": "framed-surface",
+      "description": "Flat white game content frame; artwork omitted in this portable preview.",
+      "html": "<article class=\"ds-game\"><div class=\"ds-copy\"><h3>Pokericabra</h3><p class=\"ds-availability\">Coming soon on Steam</p><p>Build your deck, face enemies, and discover new combinations.</p><a class=\"ds-store\" href=\"#steam\">Wishlist on Steam</a></div></article>",
+      "css": ".ds-game{background:var(--paper,#fff);border:1px solid var(--line,#ccd6e8);border-radius:16px;overflow:hidden;color:var(--ink,#172848);font:16px \"Segoe UI\",Arial,sans-serif}.ds-copy{padding:30px;display:flex;flex-direction:column;align-items:flex-start}.ds-copy h3{font:800 28px/1.2 Manrope,\"Segoe UI\",sans-serif;margin:0 0 10px;letter-spacing:-.015em}.ds-copy p{color:var(--muted,#53617b);line-height:1.65;max-width:47ch;margin:0 0 25px}.ds-copy .ds-availability{font-size:14px;color:var(--blue,#184beb);font-weight:600;margin-bottom:16px}.ds-store{display:inline-flex;align-items:center;justify-content:center;gap:13px;border:1px solid transparent;border-radius:10px;padding:15px 21px;font:650 16px \"Segoe UI\",Arial,sans-serif;text-decoration:none;min-height:50px;background:var(--blue,#184beb);color:white;margin-top:auto}.ds-store:hover{background:#1039b9}.ds-store:focus-visible{outline:3px solid var(--red,#d53936);outline-offset:5px}@media(max-width:760px){.ds-copy{padding:24px}}"
+    },
+    {
+      "name": "Numbered sequence label",
+      "kind": "custom",
+      "description": "Numbered heading above each instructional image.",
+      "html": "<h3 class=\"ds-step\"><span>2</span>Draw and describe</h3>",
+      "css": ".ds-step{display:flex;align-items:center;gap:10px;min-height:32px;margin:0 0 14px;font:650 18px \"Segoe UI\",Arial,sans-serif;letter-spacing:-.015em;color:var(--ink,#172848)}.ds-step span{width:30px;height:30px;display:inline-grid;place-items:center;flex:none;background:var(--wash,#ecf1ff);color:var(--blue,#184beb);border-radius:50%;font-size:13px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Digital studio critique sheet",
+    "overview": "The product home inherits Drawply’s established world: pale-blue paper, graphite text, cobalt controls and a vermilion editorial underline. Heavy, tightly spaced headings give the page its voice; generous whitespace and familiar utility text make the working annotation surface approachable.\n\nGame artwork retains its own illustrated character inside quiet white frames. This document records the built root homepage and shared stylesheet, using the inherited direction (seed 27277916). It is repository documentation, excluded from public deployment.",
+    "keyCharacteristics": [
+      "Pale-blue introductory ground and quiet reading surfaces.",
+      "Self-hosted Manrope headings with practical system UI text.",
+      "A working annotation surface and an ordered visual example.",
+      "Distinct game imagery in softly rounded frames."
+    ],
+    "rules": [
+      {
+        "name": "The Action and Annotation Rule",
+        "body": "Cobalt identifies actions and emphasis; vermilion identifies editorial marks and focus.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Roles Rule",
+        "body": "Manrope carries product identity and major headings; system UI type carries instructions, captions and controls.",
+        "section": "typography"
+      },
+      {
+        "name": "The Working Surface Rule",
+        "body": "Reserve ambient elevation for the working annotation surface; reading sections and product frames use tonal separation and borders.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep cobalt for actions and vermilion for editorial emphasis and visible focus.",
+      "**Do** retain Manrope for product identity and major headings, with system UI text for instructions and controls.",
+      "**Do** preserve complete instructional images and let the live demo follow its content height.",
+      "**Do** keep distinct game imagery within the calm surrounding product presentation.",
+      "**Do** preserve keyboard focus, mobile wrapping and reduced-motion scrolling."
+    ],
+    "donts": [
+      "**Don't** turn the illustrative sample’s identity or typography into the product home’s design rules.",
+      "**Don't** add decorative motion or competing shadows to the working demo.",
+      "**Don't** replace the confirmed product identity with a personal portfolio or invented corporate identity."
+    ]
+  }
+}
