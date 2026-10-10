@@ -1,0 +1,3 @@
+Drawply website: MIT (see license.html).
+Manrope: Copyright 2018 The Manrope Project Authors, SIL Open Font License 1.1; see assets/fonts/OFL.txt. Font served locally; no Google Fonts requests.
+Original SVG examples are illustrative. No game artwork is included.
