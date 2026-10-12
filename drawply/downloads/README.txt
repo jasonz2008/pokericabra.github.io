@@ -1,9 +1,9 @@
-# Drawply 0.3.6
+# Drawply 0.4.2
 
 Draw feedback directly on an AI result, then continue in the same chat. Available as a standalone skill or a plugin containing the same self-contained skill. MIT licensed.
 
 ## Install using Codex
-Download the skill ZIP from the Drawply website. Give Codex the downloaded file or its URL and ask:
+Open [Drawply’s website](https://pokericabra.com/drawply/) and choose **Install using Codex**, or download the skill ZIP from [GitHub Releases](https://github.com/jasonz2008/drawply/releases/latest). Give Codex the downloaded file or its URL and ask:
 
 > Inspect this Drawply skill ZIP, check inline visualization support, then install it as a personal skill. Do not overwrite an existing Drawply skill or plugin without asking me.
 
@@ -31,4 +31,24 @@ Ask Codex to remove only the personal Drawply skill, or uninstall the plugin thr
 
 ## GitHub
 Maintainer: https://github.com/jasonz2008
-For GitHub publication, place the plugin ZIP contents at the repository root, including .agents. The standalone installable skill is plugins/drawply/skills/drawply. No Drawply repository is assumed to be public yet.
+Source: https://github.com/jasonz2008/drawply
+
+Website and interactive demo: https://pokericabra.com/drawply/
+
+The standalone installable skill is `plugins/drawply/skills/drawply`. Report bugs and suggest improvements through [GitHub Issues](https://github.com/jasonz2008/drawply/issues). Do not include private images or credentials.
+
+Drawing has no point or mark cap. The live canvas and PNG export retain full detail. Saved chat state is compact and may simplify or omit marks in very large drawings; a reloaded review can restore only that compact reference. Export a PNG before closing when exact detail matters.
+
+## Select (0.4.0)
+
+Codex can prepare UI previews with exact nested source layers. Select whole objects, click again for parts or characters, and move, resize, or rotate them. Click outside, Escape, or Up returns one level. Undo/redo includes transformations; exports omit editing handles. Size & rotation stays collapsed until needed.
+
+This does not recognize objects in uploaded flat pictures. Older PNG-only reviews still support annotation; Select needs a newly prepared review with an element map. Review edits express feedback; Codex applies the changes to the source afterward. See the skill reference `references/selectable-results.md` for the layer format.
+
+### Box selection (0.4.1)
+
+In Select mode, drag from outside the current selection to enclose several elements. The box selects complete enclosed elements without selecting a parent and its children twice. Move, resize, or rotate the selection together. Drag either direction; an empty box clears selection and Escape cancels the box.
+
+### Editor boundary (0.4.2)
+
+A subtle rounded border and inner spacing keep the inline editor separate from the conversation.
