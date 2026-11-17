@@ -5,7 +5,7 @@ Portfolio website at https://pokericabra.com/.
 - Drawply leads the homepage; its demo, installation guide, and downloads live under /drawply/.
 - Pokericabra Trainee: https://play.google.com/store/apps/details?id=com.pokericabra.trainee
 - Pokericabra on Steam: https://store.steampowered.com/app/4027440/Pokericabra/
-- The eight current projects follow Drawply at /#projects. Development projects link to selected project screens; concept art is identified explicitly.
+- The seven current projects follow Drawply at /#projects. Development projects link to selected project screens; concept art is identified explicitly.
 
 ## Publishing
 

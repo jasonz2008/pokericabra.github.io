@@ -9,8 +9,6 @@
 .project-visual img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .25s ease}
 .project-visual:hover img{transform:scale(1.025)}
 .project-visual:focus-visible{outline-offset:-5px;position:relative;z-index:1}
-.portrait-art{background:#e7bb69}
-.portrait-art img{object-fit:cover;object-position:50% 13%}
 .project-copy{padding:30px;flex:1;display:flex;flex-direction:column;align-items:flex-start}
 .project-category{color:var(--muted);font-size:13px;margin:0 0 12px}
 .project h3{font:800 clamp(1.5rem,2.2vw,1.75rem)/1.22 Manrope,"Segoe UI",sans-serif;letter-spacing:-.025em;margin:0 0 12px}
