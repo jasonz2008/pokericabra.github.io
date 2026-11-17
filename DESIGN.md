@@ -114,7 +114,7 @@ The container is capped at 1280px with 40px side gutters. Gutters become 24px be
 
 Desktop pairs hero copy and a wider demo in a .86fr / 1.14fr grid with a 44px gap. Section headings pair in a 1.15fr / .85fr grid. The example uses three columns and the game pair uses two equal columns. All become single-column flows below 760px; actions and footer links wrap. Major desktop sections use approximately 80–88px vertical spacing; mobile sections tighten to approximately 52–54px.
 
-The iframe follows its actual content height. The parent accepts finite heights from 180 to 900px only from the active demo window. On initial load, viewports at or below 760px select the mobile sample. Preserve content-aware sizing. Instructional images retain their full aspect ratio; game art is cropped inside consistent frames.
+The iframe follows its actual content height. The parent accepts finite heights from 180 to 900px only from the active demo window. Viewports at or below 760px select the mobile sample; the source follows breakpoint changes without reloading an unchanged source. Preserve content-aware sizing. Instructional images retain their full aspect ratio; game art is cropped inside consistent frames.
 
 ## Elevation & Depth
 

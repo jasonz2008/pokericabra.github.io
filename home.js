@@ -1,5 +1,13 @@
 const demoFrame = document.querySelector('.demo iframe');
-if (demoFrame && matchMedia('(max-width:760px)').matches) demoFrame.src = demoFrame.dataset.mobileSrc;
+const demoMedia = matchMedia('(max-width:760px)');
+const desktopDemoSource = demoFrame?.getAttribute('src');
+const syncDemo = () => {
+  if (!demoFrame) return;
+  const source = demoMedia.matches ? demoFrame.dataset.mobileSrc : desktopDemoSource;
+  if (demoFrame.getAttribute('src') !== source) demoFrame.src = source;
+};
+syncDemo();
+demoMedia.addEventListener('change', syncDemo);
 window.addEventListener('message', event => {
   if (event.source !== demoFrame?.contentWindow || event.data?.type !== 'drawply-demo-size') return;
   const height = event.data.height;
