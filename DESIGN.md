@@ -166,6 +166,12 @@ A plain reading surface pairs a compact statement with the same primary installa
 
 - **Don't** turn the illustrative sample’s identity or typography into the product home’s design rules.
 - **Don't** add decorative motion or competing shadows to the working demo.
-- **Don't** replace the confirmed product identity with a personal portfolio or invented corporate identity.
+- **Don't** replace Drawply’s confirmed visual identity or invent a corporate identity when adding portfolio content.
 
 The illustrative sample’s internal eyebrow and system display typography are deliberately not canonized; they belong to example content, not the product interface. No material unresolved craft defect is adopted as a system rule.
+
+## Portfolio extension — November 2026
+
+The homepage now serves Jason Zhong’s portfolio while retaining Drawply’s first viewport and walkthrough. The Projects navigation anchor leads to eight current projects in a two-column collection, stacking below 760px. Each entry uses a selected real project screen, title, platform/genre, truthful availability, short description and working destination. Fore of the Dead is explicitly marked as concept art; One More Game uses a recorded development interface. Unpublished projects open their image rather than a private demo.
+
+The collection retains white 16px frames, Manrope titles, cobalt availability and the established 1280px container. Images use a consistent 16:10 frame with contain sizing to preserve complete game interfaces; the inherited mobile title image retains its intentional crop. Project links have 44px target height. Images zoom slightly on hover, arrows shift, and root-page buttons lift and press; reduced motion suppresses these transforms. Drawply’s shared pages and annotation runtime are unchanged.
