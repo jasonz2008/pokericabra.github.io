@@ -1,14 +1,16 @@
-# Jason Zhong — Drawply, games & experiments
+# Jason Zhong — Games & creative tools
 
-Portfolio website at https://pokericabra.com/.
+Public portfolio at [pokericabra.com](https://pokericabra.com/).
 
-- Drawply leads the homepage; its demo, installation guide, and downloads live under /drawply/.
-- Pokericabra Trainee: https://play.google.com/store/apps/details?id=com.pokericabra.trainee
-- Pokericabra on Steam: https://store.steampowered.com/app/4027440/Pokericabra/
-- The seven current projects follow Drawply at /#projects. Development projects link to selected project screens; concept art is identified explicitly.
+- The homepage opens with seven selectable game projects, artwork, real screenshots and local gameplay videos. Its content source is the `portfolio-data` JSON in `index.html`.
+- Pokericabra links to its [Steam listing](https://store.steampowered.com/app/4027440/Pokericabra/); Pokericabra Trainee links to [Google Play](https://play.google.com/store/apps/details?id=com.pokericabra.trainee). Development projects expose their media without inventing store destinations.
+- Drawply follows the game showcase with a working annotation demo. Its independent site, installation guide and downloads remain under `/drawply/`.
+- `/resume.html` provides the professional résumé and `/assets/Jason-Zhong-Resume.pdf` provides the public PDF. Keep private contact details and source personal documents out of public assets.
 
 ## Publishing
 
-GitHub Actions deploys an explicit list of public files to GitHub Pages. Only the selected showcase images in assets/projects are published; keep personal documents, internal screenshots, and development evidence outside the published paths. The market-data updater remains removed.
+`.github/workflows/market-pages.yml` deploys on pushes to `main` and manual dispatch. It stages the named root HTML, CSS, JS, legal and configuration files, then copies **all of `assets/` and `drawply/`**. Anything added beneath those directories is public; documentation, approval references and development evidence belong outside them. `DESIGN.md`, `PRODUCT.md`, `.impeccable/` and `docs/` are not staged.
 
-Game privacy, terms, data deletion, app-ads.txt, and CNAME are retained. Drawply source and licensing: https://github.com/jasonz2008/drawply.
+Game policies, data deletion, `app-ads.txt`, and `CNAME` remain in place. The market-data updater remains removed. Drawply source and licensing: [jasonz2008/drawply](https://github.com/jasonz2008/drawply).
+
+The root design system lives in `DESIGN.md`; route-specific notes live in `docs/design/`. Media provenance and publishing boundaries are in `ASSETS.md`.

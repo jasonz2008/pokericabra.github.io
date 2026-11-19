@@ -1,177 +1,198 @@
 ---
-name: Drawply & Pokericabra
-description: A digital studio critique sheet for visual feedback and game discovery.
+name: Jason Zhong — Games & creative tools
+description: A restrained cinema-program frame for independent games and professional experience.
 colors:
-  ink: "#172848"
-  muted: "#53617b"
-  blue: "#184beb"
-  line: "#ccd6e8"
-  paper: "#fff"
-  wash: "#ecf1ff"
-  red: "#d53936"
+  bg: "#11181b"
+  surface: "#1a2327"
+  ink: "#f3f0e8"
+  muted: "#b6bfbd"
+  accent: "#dcca9f"
+  line: "#354044"
+  line-strong: "#6d787a"
+  paper: "#edf1ed"
+  paper-ink: "#192326"
+  paper-muted: "#485956"
+  paper-accent: "#735b2f"
+  paper-line: "#c8d0c9"
+  paper-line-strong: "#89988d"
 typography:
   display:
     fontFamily: 'Manrope, "Segoe UI", sans-serif'
-    fontSize: "clamp(3.6rem,6.4vw,6rem)"
+    fontSize: "clamp(46px,5.25vw,76px)"
     fontWeight: 800
-    lineHeight: 1.01
+    lineHeight: 1.04
     letterSpacing: "-.04em"
   headline:
     fontFamily: 'Manrope, "Segoe UI", sans-serif'
-    fontSize: "clamp(2.1rem,3.5vw,3.5rem)"
+    fontSize: "54px"
+    fontWeight: 800
     lineHeight: 1.12
     letterSpacing: "-.04em"
   body:
-    fontFamily: '"Segoe UI", Arial, sans-serif'
+    fontFamily: 'Manrope, "Segoe UI", sans-serif'
+    fontSize: "16px"
     lineHeight: 1.65
   label:
-    fontFamily: '"Segoe UI", Arial, sans-serif'
-    fontSize: "13px"
+    fontFamily: 'Manrope, "Segoe UI", sans-serif'
+    fontSize: "14px"
+    fontWeight: 650
 rounded:
-  control: "10px"
-  frame: "16px"
+  compact: "6px"
+  control: "8px"
+  thumbnail: "10px"
+  frame: "12px"
 spacing:
-  control-gap: "14px"
-  inset: "20px"
+  tight: "8px"
+  control-gap: "12px"
   content-gap: "24px"
-  heading-gap: "64px"
+  group-gap: "32px"
+  column-gap: "48px"
+  section-gap: "72px"
 components:
   button-primary:
-    backgroundColor: "{colors.blue}"
-    textColor: "{colors.paper}"
+    backgroundColor: "{colors.accent}"
+    textColor: "{colors.bg}"
     rounded: "{rounded.control}"
-    padding: "15px 21px"
+    padding: "12px 18px"
   button-secondary:
     backgroundColor: "transparent"
     textColor: "{colors.ink}"
     rounded: "{rounded.control}"
-    padding: "15px 21px"
-  framed-surface:
-    backgroundColor: "{colors.paper}"
+    padding: "12px 18px"
+  button-paper-primary:
+    backgroundColor: "{colors.paper-ink}"
+    textColor: "{colors.paper}"
+    rounded: "{rounded.control}"
+    padding: "12px 18px"
+  media-tab:
+    backgroundColor: "transparent"
+    textColor: "{colors.muted}"
+    rounded: "{rounded.compact}"
+    padding: "8px 16px"
+  media-tab-selected:
+    backgroundColor: "{colors.accent}"
+    textColor: "{colors.bg}"
+    rounded: "{rounded.compact}"
+    padding: "8px 16px"
+  media-frame:
     rounded: "{rounded.frame}"
+  project-thumbnail:
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.thumbnail}"
 ---
 
-# Design System: Drawply & Pokericabra
+# Design System: Jason Zhong — Games & creative tools
 
 ## Overview
 
-**Creative North Star: "Digital studio critique sheet"**
+**Creative North Star: "The game-showcase theater"**
 
-The product home inherits Drawply’s established world: pale-blue paper, graphite text, cobalt controls and a vermilion editorial underline. Heavy, tightly spaced headings give the page its voice; generous whitespace and familiar utility text make the working annotation surface approachable.
+Warm charcoal, ivory type and restrained brass controls form a quiet frame around the games' own artwork. Heavy Manrope headings give the portfolio a clear voice; complete screenshots and real gameplay carry the detail. The interface uses material changes, rules and selected states rather than decorative scenery.
 
-Game artwork retains its own illustrated character inside quiet white frames. This document records the built root homepage and shared stylesheet, using the inherited direction (seed 27277916). It is repository documentation, excluded from public deployment.
+This system governs `/`, `/resume.html`, and their shared `home.css`. The pale reading theme is part of this portfolio system. The independent `/drawply/` pages retain their cobalt-and-paper identity, documented in [docs/design/drawply.md](docs/design/drawply.md). Surface composition and behavior are recorded in [docs/design/portfolio.md](docs/design/portfolio.md).
 
 **Key Characteristics:**
 
-- Pale-blue introductory ground and quiet reading surfaces.
-- Self-hosted Manrope headings with practical system UI text.
-- A working annotation surface and an ordered visual example.
-- Distinct game imagery in softly rounded frames.
+- Dark presentation surfaces and light reading surfaces.
+- Self-hosted Manrope throughout, with compact heavy headings and relaxed body leading.
+- Fine borders, modest rounded corners and clear selected states.
+- Artwork, complete game interfaces and genuine footage remain distinct media.
 
 ## Colors
 
-Cool paper and blue-black text provide the neutral field; cobalt carries action and vermilion supplies the editing gesture.
+Brass provides the only principal accent; charcoal and green-tinted paper support presentation and reading respectively.
 
 ### Primary
 
-- **Cobalt action** (`blue`): installation and store actions, navigation emphasis and highlighted sequence heading.
-
-### Secondary
-
-- **Vermilion editorial mark** (`red`): irregular headline underline and visible keyboard focus.
+- **Warm brass** (`accent`): primary gameplay action, selected media and project states, availability and the small brand dot.
+- **Paper brass** (`paper-accent`): restrained emphasis within light reading surfaces.
 
 ### Neutral
 
-- **Graphite ink** (`ink`): principal text and outline-button labels.
-- **Slate text** (`muted`): explanations, captions and secondary information.
-- **Cool rule** (`line`): page boundaries, image frames and footer separation.
-- **White paper** (`paper`): reading surfaces and framed content.
-- **Pale-blue wash** (`wash`): introductory ground and numbered example markers.
+- **Theater charcoal** (`bg`) and **raised charcoal** (`surface`): page ground and interactive thumbnail or hover surfaces.
+- **Warm ivory** (`ink`) and **quiet gray** (`muted`): principal and secondary text on dark surfaces.
+- **Charcoal rule** (`line`) and **control rule** (`line-strong`): section boundaries and interactive outlines.
+- **Reading paper** (`paper`), **reading ink** (`paper-ink`) and **reading gray** (`paper-muted`): the tool introduction and résumé.
+- **Paper rule** (`paper-line`) and **paper control rule** (`paper-line-strong`): light-surface boundaries and controls.
 
-**The Action and Annotation Rule.** Cobalt identifies actions and emphasis; vermilion identifies editorial marks and focus.
+**The Local Theme Rule.** Controls inherit their surrounding theme: brass on charcoal, dark ink on paper. The fixed header and footer remain dark on the résumé.
 
 ## Typography
 
-**Display Font:** Self-hosted Manrope variable font, with Segoe UI and sans-serif fallbacks; weights 200–800 with font-display swap.
+**Display and Body Font:** Self-hosted Manrope variable font, with Segoe UI and sans-serif fallbacks; weight range 200–800 and `font-display: swap`.
 
-**Body Font:** Segoe UI, Arial, sans-serif.
-
-The steep hierarchy contrasts heavy propositions with compact utility text. Tight heading tracking gives large type a compact silhouette; relaxed paragraph leading supports quick reading.
+The hierarchy is steep but uses one family. Large headings use tight tracking and balanced wrapping; paragraphs retain generous leading. Body weight stays quieter than titles and controls.
 
 ### Hierarchy
 
-- **Display:** The hero uses the recorded display role. Below 1000px it becomes 4.2rem; below 760px it uses clamp(3.5rem,13vw,5.3rem) and a 10ch maximum width.
-- **Headline:** Section headings use Manrope and balanced wrapping. The sequence heading increases weight to 800 and tightens leading to 1.08.
-- **Titles:** Game names use Manrope at 28px, weight 800 and line-height 1.2. Sequence step labels use 18px system UI at weight 650.
-- **Body:** Hero copy moves from 20px to 18px below 1000px. Section descriptions move from 18px to 17px on mobile; captions use 15px.
-- **Label:** Small contextual copy uses the label role. Navigation uses 14px system UI at weight 600.
+- **Display:** The main project title uses the recorded display role. Long names receive a smaller responsive size; mobile wraps the complete name.
+- **Headline:** Tool headings use the recorded headline role and become smaller at intermediate widths. The root résumé introduction uses a 32px heading with 1.2 leading; résumé-page section headings use a quieter 30px size.
+- **Feature description:** 20px with 1.55 leading and a 39ch maximum measure on desktop; 18px on mobile.
+- **Body:** The recorded body role supports résumé lists. Tool explanations use 17px; the résumé summary uses 18px.
+- **Controls:** 15px, weight 750, line-height 1.4. Media labels use the recorded label role; project captions use 12px, weight 750.
 
-**The Two Roles Rule.** Manrope carries product identity and major headings; system UI type carries instructions, captions and controls.
+**The Full Name Rule.** Wrap long project names and reduce display size before clipping or abbreviating them.
 
 ## Layout
 
-The container is capped at 1280px with 40px side gutters. Gutters become 24px below 1000px, 20px below 760px, and 16px below 380px.
+The shared container is capped at 1280px. Side gutters grow fluidly from 24px to 80px; the responsive overrides use 32px at 1000px, 22px at 760px and 18px at 380px. The fixed header is 80px high, reducing to 68px on mobile; anchors account for its height.
 
-Desktop pairs hero copy and a wider demo in a .86fr / 1.14fr grid with a 44px gap. Section headings pair in a 1.15fr / .85fr grid. The example uses three columns and the game pair uses two equal columns. All become single-column flows below 760px; actions and footer links wrap. Major desktop sections use approximately 80–88px vertical spacing; mobile sections tighten to approximately 52–54px.
-
-The iframe follows its actual content height. The parent accepts finite heights from 180 to 900px only from the active demo window. Viewports at or below 760px select the mobile sample; the source follows breakpoint changes without reloading an unchanged source. Preserve content-aware sizing. Instructional images retain their full aspect ratio; game art is cropped inside consistent frames.
+Desktop uses unequal columns with generous gaps; tablet stacks the project presentation and keeps copy controls together where space permits. At 760px the tool and résumé layouts become single-column. Controls retain usable targets and wrap where needed. The portfolio's exact first-screen composition and seven-project rail are surface decisions, not requirements for every future page.
 
 ## Elevation & Depth
 
-Whitespace, cool rules and tonal sections establish most separation. The demo receives a diffuse shadow (`0 20px 50px -24px #32477666`); game cards use fine borders without a competing shadow.
+The system is flat at rest. Tonal changes and thin borders separate surfaces. The selected project uses an accent outline, not an ambient shadow. The video dialog earns depth through a darkened backdrop; its content remains a simple framed surface.
 
-**The Working Surface Rule.** Reserve ambient elevation for the working annotation surface; reading sections and product frames use tonal separation and borders.
+**The Media Leads Rule.** Depth belongs to the work and the active modal. Surrounding interface surfaces use restrained borders and tonal separation.
 
 ## Shapes
 
-Buttons and instructional images share compact rounded corners. The demo and game cards use the larger frame radius. Thin blue-gray borders define white and transparent surfaces. The irregular, slightly rotated underline is a local hero signature. Numbered steps use pale-blue circles and cobalt numerals. Action arrows use line SVGs.
+Compact corners belong to media tabs and icon controls, control corners to action buttons, and broader corners to thumbnails and media frames. Images clip to their enclosing frame. Complete artwork and game screenshots use contain sizing; small rail thumbnails crop to a consistent landscape ratio. Circles are limited to small status dots and the preview play control.
 
 ## Components
 
 ### Buttons
 
-Primary actions use cobalt with white text; secondary actions use graphite text, a light outline and transparent fill. Both use the recorded control radius and padding, with a minimum height of 50px. Primary hover darkens to #1039b9; secondary hover fills with white. Links and buttons receive a 3px vermilion focus ring with 5px offset. No ornamental button motion is present.
+Primary actions use the local action color; secondary actions use transparent fill and a stronger outline. Both have a 48px minimum height and the recorded control padding. Hover changes tone and lifts by 1px on a fine pointer; press moves down by 1px. Focus draws an immediate 2px outline with 5px offset. Reduced motion removes travel.
 
 ### Navigation
 
-The original mark and Manrope wordmark sit beside small semibold links. Hover underlines links; the installation destination stays cobalt. Mobile hides the redundant About Drawply link while retaining games and installation. Footer links wrap and policies remain grouped by product.
+A heavy wordmark pairs with restrained semibold destinations. The current destination and hover state use a thin brass underline. Mobile keeps direct navigation, reducing spacing; only the redundant Games link hides at the narrowest breakpoint. The skip link becomes visible on focus.
 
-### Live annotation frame
+### Media tabs and frames
 
-A white rounded frame contains a compact title bar, the actual annotation runtime and a pale explanatory footer. The caption invites interaction. Surrounding copy states that demo marks remain local and nothing is sent to an AI. Embedded controls remain owned by the existing runtime.
+The selected media tab uses brass with charcoal text; inactive tabs use muted text and a quiet tonal hover. Tabs support arrow keys, Home and End. The frame preserves full source media; enlargement opens the selected original. A project-specific extra view is shown only when its source exists.
 
-### Three-image result sequence
+### Project thumbnails
 
-Numbered labels lead linked images; short captions follow. The sequence moves from initial output to marked feedback to the updated result. Each image opens at full resolution. A quiet ruled note identifies the conversation as illustrative. Mobile preserves narrative order in a vertical stack.
+Flat charcoal frames pair a cropped image with a short title band. Selection changes the border, outline and title band to brass. Hover raises the frame slightly and enlarges the image inside its clip. Only the active tab participates in sequential keyboard focus; arrow keys move between choices. Playback controls wait until the selected project's media finishes loading.
 
-### Game cards
+### Video dialog
 
-Quiet white frames contain distinct artwork, product title, availability, description and store action. Artwork is 280px high on desktop, 230px below 760px and 200px below 380px. Content padding moves from 30px to 24px on mobile. Actions align at the bottom of flexible content areas. Availability uses cobalt semibold text, with truthful platform-specific wording.
+A native modal dialog pairs a compact heading and close control with the real video, a contextual note when necessary, and a direct file link. Playback starts only after a visitor opens it. Closing pauses and unloads the video and returns focus to its trigger. Escape and backdrop dismissal retain native expectations.
 
-### Closing action
+### Annotation frame and résumé entries
 
-A plain reading surface pairs a compact statement with the same primary installation button. Mobile stacks the action below the statement. Smooth anchor scrolling becomes immediate when reduced motion is requested.
+The embedded Drawply workspace retains its own interface inside a white, lightly bordered frame. The parent follows trusted content-height messages and changes demo source at the mobile breakpoint. Résumé entries use typographic headings, metadata, lists and fine separators, with no decorative card grid.
+
+The root résumé introduction uses a proper Résumé heading above supporting body text, not a small contextual label above display copy. Its body stays 20px with 1.55 leading and weight 500 at every breakpoint. A short experience phrase receives the existing word-highlight treatment. The HTML résumé and PDF remain two distinct links.
+
+Motion comprises one entrance, short user-triggered project and media transitions, quiet hover feedback and a single résumé word-highlight passage. Respect reduced motion throughout. There is no timed project rotation.
 
 ## Do's and Don'ts
 
 ### Do:
 
-- **Do** keep cobalt for actions and vermilion for editorial emphasis and visible focus.
-- **Do** retain Manrope for product identity and major headings, with system UI text for instructions and controls.
-- **Do** preserve complete instructional images and let the live demo follow its content height.
-- **Do** keep distinct game imagery within the calm surrounding product presentation.
-- **Do** preserve keyboard focus, mobile wrapping and reduced-motion scrolling.
+- **Do** keep surrounding controls quieter than the artwork and footage.
+- **Do** use the local dark or paper theme consistently, including visible keyboard focus.
+- **Do** preserve complete screenshots and truthful distinctions between artwork, gameplay and development footage.
+- **Do** keep long titles, direct media links, keyboard navigation and reduced-motion behavior usable.
 
 ### Don't:
 
-- **Don't** turn the illustrative sample’s identity or typography into the product home’s design rules.
-- **Don't** add decorative motion or competing shadows to the working demo.
-- **Don't** replace Drawply’s confirmed visual identity or invent a corporate identity when adding portfolio content.
+- **Don't** apply this portfolio's charcoal-and-brass theme to the independent Drawply pages.
+- **Don't** turn generated composition references into project names, screenshots, store claims or footage.
+- **Don't** add automatic project rotation or competing decorative depth to the presentation.
 
-The illustrative sample’s internal eyebrow and system display typography are deliberately not canonized; they belong to example content, not the product interface. No material unresolved craft defect is adopted as a system rule.
-
-## Portfolio extension — November 2026
-
-The homepage now serves Jason Zhong’s portfolio while retaining Drawply’s first viewport and walkthrough. The Projects navigation anchor leads to seven current projects in a two-column collection, stacking below 760px. Each entry uses a selected real project screen, title, platform/genre, truthful availability, short description and working destination. Fore of the Dead is explicitly marked as concept art; MOBA Auto Battler and One More Game use the user-supplied battlefield and esports career interface images. Unpublished projects open their image rather than a private demo.
-
-The collection retains white 16px frames, Manrope titles, cobalt availability and the established 1280px container. Images use a consistent 16:10 frame with contain sizing to preserve complete game interfaces; the updated Trainee main-menu screenshot is shown complete, like the other portrait game interface. Project links have 44px target height. Images zoom slightly on hover, arrows shift, and root-page buttons lift and press; reduced motion suppresses these transforms. Drawply’s shared pages and annotation runtime are unchanged.
+Generated-comp inventions and the embedded demo's sample-page typography are deliberately not canonized; they are not the portfolio's product truth or design system.

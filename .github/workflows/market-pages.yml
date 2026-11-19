@@ -1,4 +1,4 @@
-name: Publish Drawply and Pokericabra
+name: Publish game portfolio and Drawply
 on:
   push:
     branches: [main]
@@ -25,7 +25,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p "$RUNNER_TEMP/product-site"
-          cp index.html 404.html home.css home.js CNAME app-ads.txt privacy-policy.html terms-of-service.html delete-data.html "$RUNNER_TEMP/product-site/"
+          cp index.html resume.html 404.html home.css home.js CNAME app-ads.txt privacy-policy.html terms-of-service.html delete-data.html "$RUNNER_TEMP/product-site/"
           cp -R assets drawply "$RUNNER_TEMP/product-site/"
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -1,240 +1,392 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-10T15:54:52.517Z",
-  "title": "Design System: Drawply & Pokericabra",
+  "generatedAt": "2026-11-19T20:43:00.125Z",
+  "title": "Design System: Jason Zhong — Games & creative tools",
   "extensions": {
     "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Theater charcoal",
+        "canonical": "#11181b",
+        "tonalRamp": [
+          "oklch(15.00% 0.0121 225.86)",
+          "oklch(26.43% 0.0121 225.86)",
+          "oklch(37.86% 0.0121 225.86)",
+          "oklch(49.29% 0.0121 225.86)",
+          "oklch(60.71% 0.0121 225.86)",
+          "oklch(72.14% 0.0121 225.86)",
+          "oklch(83.57% 0.0121 225.86)",
+          "oklch(95.00% 0.0121 225.86)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Raised charcoal",
+        "canonical": "#1a2327",
+        "tonalRamp": [
+          "oklch(15.00% 0.0149 226.75)",
+          "oklch(26.43% 0.0149 226.75)",
+          "oklch(37.86% 0.0149 226.75)",
+          "oklch(49.29% 0.0149 226.75)",
+          "oklch(60.71% 0.0149 226.75)",
+          "oklch(72.14% 0.0149 226.75)",
+          "oklch(83.57% 0.0149 226.75)",
+          "oklch(95.00% 0.0149 226.75)"
+        ]
+      },
       "ink": {
         "role": "neutral",
-        "displayName": "Graphite ink",
+        "displayName": "Warm ivory",
+        "canonical": "#f3f0e8",
         "tonalRamp": [
-          "oklch(15% 0.06 260)",
-          "oklch(26.43% 0.06 260)",
-          "oklch(37.86% 0.06 260)",
-          "oklch(49.29% 0.06 260)",
-          "oklch(60.71% 0.06 260)",
-          "oklch(72.14% 0.06 260)",
-          "oklch(83.57% 0.06 260)",
-          "oklch(95% 0.06 260)"
+          "oklch(15.00% 0.0111 89.72)",
+          "oklch(26.43% 0.0111 89.72)",
+          "oklch(37.86% 0.0111 89.72)",
+          "oklch(49.29% 0.0111 89.72)",
+          "oklch(60.71% 0.0111 89.72)",
+          "oklch(72.14% 0.0111 89.72)",
+          "oklch(83.57% 0.0111 89.72)",
+          "oklch(95.00% 0.0111 89.72)"
         ]
       },
       "muted": {
         "role": "neutral",
-        "displayName": "Slate text",
+        "displayName": "Quiet gray",
+        "canonical": "#b6bfbd",
         "tonalRamp": [
-          "oklch(15% 0.045 260)",
-          "oklch(26.43% 0.045 260)",
-          "oklch(37.86% 0.045 260)",
-          "oklch(49.29% 0.045 260)",
-          "oklch(60.71% 0.045 260)",
-          "oklch(72.14% 0.045 260)",
-          "oklch(83.57% 0.045 260)",
-          "oklch(95% 0.045 260)"
+          "oklch(15.00% 0.0103 181.33)",
+          "oklch(26.43% 0.0103 181.33)",
+          "oklch(37.86% 0.0103 181.33)",
+          "oklch(49.29% 0.0103 181.33)",
+          "oklch(60.71% 0.0103 181.33)",
+          "oklch(72.14% 0.0103 181.33)",
+          "oklch(83.57% 0.0103 181.33)",
+          "oklch(95.00% 0.0103 181.33)"
         ]
       },
-      "blue": {
+      "accent": {
         "role": "primary",
-        "displayName": "Cobalt action",
+        "displayName": "Warm brass",
+        "canonical": "#dcca9f",
         "tonalRamp": [
-          "oklch(15% 0.22 265)",
-          "oklch(26.43% 0.22 265)",
-          "oklch(37.86% 0.22 265)",
-          "oklch(49.29% 0.22 265)",
-          "oklch(60.71% 0.22 265)",
-          "oklch(72.14% 0.22 265)",
-          "oklch(83.57% 0.22 265)",
-          "oklch(95% 0.22 265)"
+          "oklch(15.00% 0.0603 87.97)",
+          "oklch(26.43% 0.0603 87.97)",
+          "oklch(37.86% 0.0603 87.97)",
+          "oklch(49.29% 0.0603 87.97)",
+          "oklch(60.71% 0.0603 87.97)",
+          "oklch(72.14% 0.0603 87.97)",
+          "oklch(83.57% 0.0603 87.97)",
+          "oklch(95.00% 0.0603 87.97)"
         ]
       },
       "line": {
         "role": "neutral",
-        "displayName": "Cool rule",
+        "displayName": "Charcoal rule",
+        "canonical": "#354044",
         "tonalRamp": [
-          "oklch(15% 0.027 260)",
-          "oklch(26.43% 0.027 260)",
-          "oklch(37.86% 0.027 260)",
-          "oklch(49.29% 0.027 260)",
-          "oklch(60.71% 0.027 260)",
-          "oklch(72.14% 0.027 260)",
-          "oklch(83.57% 0.027 260)",
-          "oklch(95% 0.027 260)"
+          "oklch(15.00% 0.0160 221.80)",
+          "oklch(26.43% 0.0160 221.80)",
+          "oklch(37.86% 0.0160 221.80)",
+          "oklch(49.29% 0.0160 221.80)",
+          "oklch(60.71% 0.0160 221.80)",
+          "oklch(72.14% 0.0160 221.80)",
+          "oklch(83.57% 0.0160 221.80)",
+          "oklch(95.00% 0.0160 221.80)"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Control rule",
+        "canonical": "#6d787a",
+        "tonalRamp": [
+          "oklch(15.00% 0.0135 209.80)",
+          "oklch(26.43% 0.0135 209.80)",
+          "oklch(37.86% 0.0135 209.80)",
+          "oklch(49.29% 0.0135 209.80)",
+          "oklch(60.71% 0.0135 209.80)",
+          "oklch(72.14% 0.0135 209.80)",
+          "oklch(83.57% 0.0135 209.80)",
+          "oklch(95.00% 0.0135 209.80)"
         ]
       },
       "paper": {
         "role": "neutral",
-        "displayName": "White paper",
+        "displayName": "Reading paper",
+        "canonical": "#edf1ed",
         "tonalRamp": [
-          "oklch(15% 0 0)",
-          "oklch(26.43% 0 0)",
-          "oklch(37.86% 0 0)",
-          "oklch(49.29% 0 0)",
-          "oklch(60.71% 0 0)",
-          "oklch(72.14% 0 0)",
-          "oklch(83.57% 0 0)",
-          "oklch(95% 0 0)"
+          "oklch(15.00% 0.0068 145.52)",
+          "oklch(26.43% 0.0068 145.52)",
+          "oklch(37.86% 0.0068 145.52)",
+          "oklch(49.29% 0.0068 145.52)",
+          "oklch(60.71% 0.0068 145.52)",
+          "oklch(72.14% 0.0068 145.52)",
+          "oklch(83.57% 0.0068 145.52)",
+          "oklch(95.00% 0.0068 145.52)"
         ]
       },
-      "wash": {
+      "paper-ink": {
         "role": "neutral",
-        "displayName": "Pale-blue wash",
+        "displayName": "Reading ink",
+        "canonical": "#192326",
         "tonalRamp": [
-          "oklch(15% 0.021 265)",
-          "oklch(26.43% 0.021 265)",
-          "oklch(37.86% 0.021 265)",
-          "oklch(49.29% 0.021 265)",
-          "oklch(60.71% 0.021 265)",
-          "oklch(72.14% 0.021 265)",
-          "oklch(83.57% 0.021 265)",
-          "oklch(95% 0.021 265)"
+          "oklch(15.00% 0.0152 218.08)",
+          "oklch(26.43% 0.0152 218.08)",
+          "oklch(37.86% 0.0152 218.08)",
+          "oklch(49.29% 0.0152 218.08)",
+          "oklch(60.71% 0.0152 218.08)",
+          "oklch(72.14% 0.0152 218.08)",
+          "oklch(83.57% 0.0152 218.08)",
+          "oklch(95.00% 0.0152 218.08)"
         ]
       },
-      "red": {
-        "role": "secondary",
-        "displayName": "Vermilion editorial mark",
+      "paper-muted": {
+        "role": "neutral",
+        "displayName": "Reading gray",
+        "canonical": "#485956",
         "tonalRamp": [
-          "oklch(15% 0.19 28)",
-          "oklch(26.43% 0.19 28)",
-          "oklch(37.86% 0.19 28)",
-          "oklch(49.29% 0.19 28)",
-          "oklch(60.71% 0.19 28)",
-          "oklch(72.14% 0.19 28)",
-          "oklch(83.57% 0.19 28)",
-          "oklch(95% 0.19 28)"
+          "oklch(15.00% 0.0216 183.45)",
+          "oklch(26.43% 0.0216 183.45)",
+          "oklch(37.86% 0.0216 183.45)",
+          "oklch(49.29% 0.0216 183.45)",
+          "oklch(60.71% 0.0216 183.45)",
+          "oklch(72.14% 0.0216 183.45)",
+          "oklch(83.57% 0.0216 183.45)",
+          "oklch(95.00% 0.0216 183.45)"
+        ]
+      },
+      "paper-accent": {
+        "role": "primary",
+        "displayName": "Paper brass",
+        "canonical": "#735b2f",
+        "tonalRamp": [
+          "oklch(15.00% 0.0687 81.13)",
+          "oklch(26.43% 0.0687 81.13)",
+          "oklch(37.86% 0.0687 81.13)",
+          "oklch(49.29% 0.0687 81.13)",
+          "oklch(60.71% 0.0687 81.13)",
+          "oklch(72.14% 0.0687 81.13)",
+          "oklch(83.57% 0.0687 81.13)",
+          "oklch(95.00% 0.0687 81.13)"
+        ]
+      },
+      "paper-line": {
+        "role": "neutral",
+        "displayName": "Paper rule",
+        "canonical": "#c8d0c9",
+        "tonalRamp": [
+          "oklch(15.00% 0.0129 149.22)",
+          "oklch(26.43% 0.0129 149.22)",
+          "oklch(37.86% 0.0129 149.22)",
+          "oklch(49.29% 0.0129 149.22)",
+          "oklch(60.71% 0.0129 149.22)",
+          "oklch(72.14% 0.0129 149.22)",
+          "oklch(83.57% 0.0129 149.22)",
+          "oklch(95.00% 0.0129 149.22)"
+        ]
+      },
+      "paper-line-strong": {
+        "role": "neutral",
+        "displayName": "Paper control rule",
+        "canonical": "#89988d",
+        "tonalRamp": [
+          "oklch(15.00% 0.0235 153.89)",
+          "oklch(26.43% 0.0235 153.89)",
+          "oklch(37.86% 0.0235 153.89)",
+          "oklch(49.29% 0.0235 153.89)",
+          "oklch(60.71% 0.0235 153.89)",
+          "oklch(72.14% 0.0235 153.89)",
+          "oklch(83.57% 0.0235 153.89)",
+          "oklch(95.00% 0.0235 153.89)"
         ]
       }
     },
     "typographyMeta": {
       "display": {
-        "displayName": "Proposition",
-        "purpose": "Heavy Manrope hero statement."
+        "displayName": "Project display",
+        "purpose": "Full game names with a smaller long-name treatment."
       },
       "headline": {
         "displayName": "Section heading",
-        "purpose": "Balanced section headings."
+        "purpose": "Tool introduction, adapted for smaller reading headings."
       },
       "body": {
-        "displayName": "Practical text",
-        "purpose": "Readable explanations."
+        "displayName": "Reading text",
+        "purpose": "Professional experience, tool explanations and media notes."
       },
       "label": {
-        "displayName": "Context",
-        "purpose": "Compact captions and notes."
+        "displayName": "Media labels",
+        "purpose": "Compact view controls and context."
       }
     },
     "shadows": [
       {
-        "name": "working-surface",
-        "value": "0 20px 50px -24px #32477666",
-        "purpose": "Diffuse elevation around the live annotation frame."
+        "name": "selected-project-outline",
+        "value": "0 0 0 2px var(--accent)",
+        "purpose": "Selection outline, not ambient elevation."
       }
     ],
     "motion": [
       {
-        "name": "anchor-scroll",
-        "value": "scroll-behavior: smooth",
-        "purpose": "Anchor navigation; switches to auto for prefers-reduced-motion: reduce."
+        "name": "ease",
+        "value": "cubic-bezier(.22,1,.36,1)",
+        "purpose": "The portfolio's principal settling curve."
+      },
+      {
+        "name": "project-selection",
+        "value": "420ms",
+        "purpose": "Visitor-triggered copy/media panel transition, suppressed under reduced motion."
+      },
+      {
+        "name": "media-selection",
+        "value": "380ms",
+        "purpose": "Visitor-triggered image transition, suppressed under reduced motion."
+      },
+      {
+        "name": "control-in",
+        "value": "150ms",
+        "purpose": "Button hover feedback."
+      },
+      {
+        "name": "control-out",
+        "value": "120ms",
+        "purpose": "Button hover exit."
+      },
+      {
+        "name": "control-press",
+        "value": "90ms",
+        "purpose": "Button press feedback."
       }
     ],
     "breakpoints": [
       {
-        "name": "intermediate",
+        "name": "wide-adjustment",
+        "value": "1100px"
+      },
+      {
+        "name": "stacked-showcase",
         "value": "1000px"
       },
       {
-        "name": "single-column",
+        "name": "mobile",
         "value": "760px"
       },
       {
         "name": "compact",
         "value": "380px"
       }
+    ],
+    "notes": [
+      "Color ramps are derived preview metadata; production colors remain the DESIGN.md frontmatter and home.css.",
+      "The independent Drawply route retains the separate visual system in docs/design/drawply.md."
     ]
   },
   "components": [
     {
-      "name": "Primary action",
+      "name": "Gameplay action",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Installation and store actions.",
-      "html": "<a class=\"ds-primary\" href=\"#download\">Install using Codex</a>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:13px;border:1px solid transparent;border-radius:10px;padding:15px 21px;font:650 16px \"Segoe UI\",Arial,sans-serif;text-decoration:none;min-height:50px;background:var(--blue,#184beb);color:var(--paper,#fff)}.ds-primary:hover{background:#1039b9}.ds-primary:focus-visible{outline:3px solid var(--red,#d53936);outline-offset:5px}"
+      "description": "Visitor-triggered playback in the dark showcase.",
+      "html": "<button type=\"button\" class=\"ds-btn ds-primary\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"m8 5 11 7-11 7Z\"/></svg>Watch gameplay</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 18px;border:1px solid var(--line-strong,#6d787a);border-radius:8px;font:750 15px/1.4 Manrope,\"Segoe UI\",sans-serif;text-decoration:none;text-align:center;cursor:pointer;transition:background-color 120ms cubic-bezier(.22,1,.36,1),transform 90ms cubic-bezier(.22,1,.36,1)}.ds-btn:focus-visible{outline:2px solid var(--ink,#f3f0e8);outline-offset:5px}.ds-btn:active{transform:translateY(1px) scale(.985)}@media(hover:hover) and (pointer:fine){.ds-btn:hover{transform:translateY(-1px)}}@media(prefers-reduced-motion:reduce){.ds-btn{transition:none}.ds-btn:hover,.ds-btn:active{transform:none}}.ds-primary{background:var(--action,#dcca9f);border-color:var(--action,#dcca9f);color:var(--action-ink,#11181b)}.ds-primary svg{fill:currentColor;stroke:none}.ds-primary:hover{background:color-mix(in oklab,var(--action,#dcca9f) 84%,var(--bg,#11181b))}"
     },
     {
       "name": "Secondary action",
       "kind": "button",
       "refersTo": "button-secondary",
-      "description": "A quieter route into the drawing example.",
-      "html": "<a class=\"ds-secondary\" href=\"#try\">Try drawing <svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 18 18 6M6 6h12v12\"/></svg></a>",
-      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:13px;border:1px solid transparent;border-radius:10px;padding:15px 21px;font:650 16px \"Segoe UI\",Arial,sans-serif;text-decoration:none;min-height:50px;background:transparent;border-color:#a8b7d1;color:var(--ink,#172848)}.ds-secondary:hover{background:white}.ds-secondary:focus-visible{outline:3px solid var(--red,#d53936);outline-offset:5px}"
+      "description": "Store destination or another route beside the main action.",
+      "html": "<a href=\"#steam\" class=\"ds-btn ds-secondary\">View on Steam<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 18 18 6M6 6h12v12\"/></svg></a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 18px;border:1px solid var(--line-strong,#6d787a);border-radius:8px;font:750 15px/1.4 Manrope,\"Segoe UI\",sans-serif;text-decoration:none;text-align:center;cursor:pointer;transition:background-color 120ms cubic-bezier(.22,1,.36,1),transform 90ms cubic-bezier(.22,1,.36,1)}.ds-btn:focus-visible{outline:2px solid var(--ink,#f3f0e8);outline-offset:5px}.ds-btn:active{transform:translateY(1px) scale(.985)}@media(hover:hover) and (pointer:fine){.ds-btn:hover{transform:translateY(-1px)}}@media(prefers-reduced-motion:reduce){.ds-btn{transition:none}.ds-btn:hover,.ds-btn:active{transform:none}}.ds-secondary{background:transparent;color:var(--ink,#f3f0e8)}.ds-secondary:hover{background:color-mix(in oklab,var(--bg,#11181b) 92%,var(--ink,#f3f0e8));border-color:color-mix(in oklab,var(--ink,#f3f0e8) 32%,transparent)}"
     },
     {
-      "name": "Product navigation",
+      "name": "Paper action",
+      "kind": "button",
+      "refersTo": "button-paper-primary",
+      "description": "The main action in the light tool section and résumé.",
+      "html": "<a href=\"#resume\" class=\"ds-btn ds-paper\">Download résumé PDF</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 18px;border:1px solid var(--line-strong,#6d787a);border-radius:8px;font:750 15px/1.4 Manrope,\"Segoe UI\",sans-serif;text-decoration:none;text-align:center;cursor:pointer;transition:background-color 120ms cubic-bezier(.22,1,.36,1),transform 90ms cubic-bezier(.22,1,.36,1)}.ds-btn:focus-visible{outline:2px solid var(--ink,#f3f0e8);outline-offset:5px}.ds-btn:active{transform:translateY(1px) scale(.985)}@media(hover:hover) and (pointer:fine){.ds-btn:hover{transform:translateY(-1px)}}@media(prefers-reduced-motion:reduce){.ds-btn{transition:none}.ds-btn:hover,.ds-btn:active{transform:none}}.ds-paper{background:#192326;border-color:#192326;color:#edf1ed}.ds-paper:focus-visible{outline-color:#192326}.ds-paper:hover{background:color-mix(in oklab,#192326 84%,#edf1ed)}"
+    },
+    {
+      "name": "Portfolio navigation",
       "kind": "nav",
-      "description": "Semibold destinations and a cobalt installation link.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Products\"><a href=\"#games\">Pokericabra</a><a class=\"ds-about\" href=\"#about\">About Drawply</a><a class=\"ds-get\" href=\"#download\">Get Drawply</a></nav>",
-      "css": ".ds-nav{display:flex;align-items:center;gap:28px;font:600 14px \"Segoe UI\",Arial,sans-serif;color:var(--ink,#172848)}.ds-nav a{display:inline-flex;padding-block:10px;text-decoration:none;color:inherit}.ds-nav a:hover{text-decoration:underline;text-underline-offset:4px}.ds-nav .ds-get{color:var(--blue,#184beb)}.ds-nav a:focus-visible{outline:3px solid var(--red,#d53936);outline-offset:5px}@media(max-width:760px){.ds-nav{gap:14px;font-size:13px}.ds-nav .ds-about{display:none}}"
+      "description": "Direct destinations with an underline for current and hover states.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#projects\" aria-current=\"page\">Games</a><a href=\"#drawply\">Drawply</a><a href=\"#resume\">Résumé</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:34px;font:600 15px Manrope,\"Segoe UI\",sans-serif;color:var(--ink,#f3f0e8)}.ds-nav a{display:inline-flex;align-items:center;min-height:44px;position:relative;text-decoration:none;color:inherit}.ds-nav a::after{content:\"\";position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--accent,#dcca9f);transform:scaleX(0);transform-origin:left;transition:transform .2s cubic-bezier(.22,1,.36,1)}.ds-nav a:hover::after,.ds-nav a[aria-current]::after{transform:scaleX(1)}.ds-nav a:focus-visible{outline:2px solid var(--ink,#f3f0e8);outline-offset:5px}@media(max-width:760px){.ds-nav{gap:14px;font-size:13px}}@media(prefers-reduced-motion:reduce){.ds-nav a::after{transition:none}}"
     },
     {
-      "name": "Working annotation frame",
-      "kind": "custom",
-      "refersTo": "framed-surface",
-      "description": "The elevated shell around the embedded runtime; the preview omits the runtime.",
-      "html": "<section class=\"ds-demo\"><div class=\"ds-title\"><span class=\"ds-dot\"></span>Your result, ready for feedback</div><div class=\"ds-stage\">Annotation workspace</div><div class=\"ds-foot\">Your marks stay in this demo; nothing is sent to an AI.</div></section>",
-      "css": ".ds-demo{background:var(--paper,#fff);border:1px solid #bccbe3;border-radius:16px;box-shadow:0 20px 50px -24px #32477666;overflow:hidden;color:var(--ink,#172848);font:13px \"Segoe UI\",Arial,sans-serif}.ds-title{display:flex;align-items:center;gap:8px;padding:16px 20px;border-bottom:1px solid #e0e5ef;font-weight:600}.ds-dot{width:7px;height:7px;border-radius:50%;background:#297450}.ds-stage{padding:40px 20px;color:var(--muted,#53617b)}.ds-foot{padding:14px 20px;background:#f8faff;border-top:1px solid #e0e5ef;color:var(--muted,#53617b);line-height:1.5}"
+      "name": "Media tabs",
+      "kind": "nav",
+      "refersTo": "media-tab-selected",
+      "description": "Artwork and genuine gameplay remain separate views.",
+      "html": "<div class=\"ds-tabs\" role=\"tablist\" aria-label=\"Project image\"><button class=\"ds-tab\" role=\"tab\" aria-selected=\"true\" type=\"button\">Artwork</button><button class=\"ds-tab\" role=\"tab\" aria-selected=\"false\" type=\"button\" tabindex=\"-1\">Gameplay</button></div>",
+      "css": ".ds-tabs{display:flex;gap:4px}.ds-tab{min-height:40px;padding:8px 16px;border:0;border-radius:6px;background:transparent;color:var(--muted,#b6bfbd);font:650 14px Manrope,\"Segoe UI\",sans-serif;cursor:pointer;transition:background-color .2s,color .2s}.ds-tab:hover{color:var(--ink,#f3f0e8);background:var(--surface,#1a2327)}.ds-tab[aria-selected=\"true\"]{background:var(--accent,#dcca9f);color:var(--bg,#11181b)}.ds-tab:focus-visible{outline:2px solid var(--ink,#f3f0e8);outline-offset:5px}@media(max-width:760px){.ds-tab{min-height:44px;padding:8px 14px;font-size:13px}}@media(prefers-reduced-motion:reduce){.ds-tab{transition:none}}"
     },
     {
-      "name": "Game content frame",
+      "name": "Selected project thumbnail",
       "kind": "card",
-      "refersTo": "framed-surface",
-      "description": "Flat white game content frame; artwork omitted in this portable preview.",
-      "html": "<article class=\"ds-game\"><div class=\"ds-copy\"><h3>Pokericabra</h3><p class=\"ds-availability\">Coming soon on Steam</p><p>Build your deck, face enemies, and discover new combinations.</p><a class=\"ds-store\" href=\"#steam\">Wishlist on Steam</a></div></article>",
-      "css": ".ds-game{background:var(--paper,#fff);border:1px solid var(--line,#ccd6e8);border-radius:16px;overflow:hidden;color:var(--ink,#172848);font:16px \"Segoe UI\",Arial,sans-serif}.ds-copy{padding:30px;display:flex;flex-direction:column;align-items:flex-start}.ds-copy h3{font:800 28px/1.2 Manrope,\"Segoe UI\",sans-serif;margin:0 0 10px;letter-spacing:-.015em}.ds-copy p{color:var(--muted,#53617b);line-height:1.65;max-width:47ch;margin:0 0 25px}.ds-copy .ds-availability{font-size:14px;color:var(--blue,#184beb);font-weight:600;margin-bottom:16px}.ds-store{display:inline-flex;align-items:center;justify-content:center;gap:13px;border:1px solid transparent;border-radius:10px;padding:15px 21px;font:650 16px \"Segoe UI\",Arial,sans-serif;text-decoration:none;min-height:50px;background:var(--blue,#184beb);color:white;margin-top:auto}.ds-store:hover{background:#1039b9}.ds-store:focus-visible{outline:3px solid var(--red,#d53936);outline-offset:5px}@media(max-width:760px){.ds-copy{padding:24px}}"
+      "refersTo": "project-thumbnail",
+      "description": "Selected rail frame; the portable preview omits its project image.",
+      "html": "<button class=\"ds-project\" type=\"button\" role=\"tab\" aria-selected=\"true\"><span class=\"ds-art\" aria-hidden=\"true\"></span><span class=\"ds-name\">Pokericabra</span></button>",
+      "css": ".ds-project{display:block;width:170px;overflow:hidden;padding:0;border:1px solid var(--accent,#dcca9f);border-radius:10px;background:var(--surface,#1a2327);color:var(--ink,#f3f0e8);text-align:left;box-shadow:0 0 0 2px var(--accent,#dcca9f);cursor:pointer;transition:transform .2s cubic-bezier(.22,1,.36,1)}.ds-art{display:block;aspect-ratio:360/203;background:#162024}.ds-name{display:flex;align-items:center;min-height:46px;padding:7px 10px;background:var(--accent,#dcca9f);color:var(--bg,#11181b);font:750 12px/1.35 Manrope,\"Segoe UI\",sans-serif}.ds-project:hover{transform:translateY(-2px)}.ds-project:focus-visible{outline:2px solid var(--ink,#f3f0e8);outline-offset:5px}.ds-project:active{transform:translateY(1px)}@media(prefers-reduced-motion:reduce){.ds-project{transition:none}.ds-project:hover,.ds-project:active{transform:none}}"
     },
     {
-      "name": "Numbered sequence label",
+      "name": "Annotation frame",
       "kind": "custom",
-      "description": "Numbered heading above each instructional image.",
-      "html": "<h3 class=\"ds-step\"><span>2</span>Draw and describe</h3>",
-      "css": ".ds-step{display:flex;align-items:center;gap:10px;min-height:32px;margin:0 0 14px;font:650 18px \"Segoe UI\",Arial,sans-serif;letter-spacing:-.015em;color:var(--ink,#172848)}.ds-step span{width:30px;height:30px;display:inline-grid;place-items:center;flex:none;background:var(--wash,#ecf1ff);color:var(--blue,#184beb);border-radius:50%;font-size:13px}"
+      "refersTo": "media-frame",
+      "description": "Portfolio shell around Drawply; the portable preview omits the runtime.",
+      "html": "<section class=\"ds-annotation\"><div class=\"ds-workspace\">Drawply annotation workspace</div><p>Try drawing. Your marks stay in this demo.</p></section>",
+      "css": ".ds-annotation{border:1px solid #c8d0c9;border-radius:12px;overflow:hidden;background:white;color:#172848;font-family:Manrope,\"Segoe UI\",sans-serif}.ds-workspace{min-height:180px;display:grid;place-items:center}.ds-annotation p{margin:0;padding:12px 16px;background:#e6ecea;color:#384947;font-size:12px;line-height:1.65}"
+    },
+    {
+      "name": "Dialog close",
+      "kind": "button",
+      "description": "The compact outlined control in the native gameplay dialog.",
+      "html": "<button class=\"ds-close\" type=\"button\" aria-label=\"Close gameplay video\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"m6 6 12 12M6 18 18 6\"/></svg></button>",
+      "css": ".ds-close{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line-strong,#6d787a);border-radius:6px;background:transparent;color:var(--ink,#f3f0e8);cursor:pointer}.ds-close:hover{background:var(--surface,#1a2327)}.ds-close:focus-visible{outline:2px solid var(--ink,#f3f0e8);outline-offset:5px}"
+    },
+    {
+      "name": "Résumé introduction",
+      "kind": "custom",
+      "description": "A real heading and supporting body, with separate HTML and PDF links; finished highlight state.",
+      "html": "<section class=\"ds-resume\"><div><h3>Résumé</h3><p>A project and product manager with <strong>7+ years of experience</strong> in digital products and research.</p></div><div class=\"ds-resume-actions\"><a href=\"/resume.html\">Read my résumé <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a><a class=\"ds-resume-pdf\" href=\"/assets/Jason-Zhong-Resume.pdf\">Download PDF</a></div></section>",
+      "css": ".ds-resume{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:48px;padding-top:36px;border-top:1px solid #c8d0c9;color:#192326;font-family:Manrope,\"Segoe UI\",sans-serif}.ds-resume h3{font-size:32px;line-height:1.2;letter-spacing:-.025em;margin:0 0 14px;font-weight:750}.ds-resume p{font-size:20px;line-height:1.55;letter-spacing:-.01em;font-weight:500;max-width:680px;margin:0}.ds-resume strong{font-weight:inherit;color:#735b2f}.ds-resume-actions{display:flex;flex-direction:column;align-items:flex-start;gap:18px;padding-bottom:5px}.ds-resume-actions a{display:inline-flex;align-items:center;gap:16px;min-height:44px;font-size:16px;font-weight:750;text-decoration:none;color:inherit;white-space:nowrap}.ds-resume-actions a:hover{text-decoration:underline;text-underline-offset:5px}.ds-resume-actions a:focus-visible{outline:2px solid #192326;outline-offset:5px}.ds-resume-actions .ds-resume-pdf{font-size:13px;color:#485956;font-weight:550}@media(max-width:1000px){.ds-resume{gap:32px}}@media(max-width:760px){.ds-resume{grid-template-columns:1fr;gap:22px;padding-top:30px}.ds-resume-actions{flex-direction:row;align-items:center;flex-wrap:wrap;gap:12px 28px}}"
     }
   ],
   "narrative": {
-    "northStar": "Digital studio critique sheet",
-    "overview": "The product home inherits Drawply’s established world: pale-blue paper, graphite text, cobalt controls and a vermilion editorial underline. Heavy, tightly spaced headings give the page its voice; generous whitespace and familiar utility text make the working annotation surface approachable.\n\nGame artwork retains its own illustrated character inside quiet white frames. This document records the built root homepage and shared stylesheet, using the inherited direction (seed 27277916). It is repository documentation, excluded from public deployment.",
+    "northStar": "The game-showcase theater",
+    "overview": "Warm charcoal, ivory type and restrained brass controls form a quiet frame around the games' own artwork. Heavy Manrope headings give the portfolio a clear voice; complete screenshots and real gameplay carry the detail. The interface uses material changes, rules and selected states rather than decorative scenery.\n\nThis system governs `/`, `/resume.html`, and their shared `home.css`. The pale reading theme is part of this portfolio system. The independent `/drawply/` pages retain their cobalt-and-paper identity, documented in [docs/design/drawply.md](docs/design/drawply.md). Surface composition and behavior are recorded in [docs/design/portfolio.md](docs/design/portfolio.md).",
     "keyCharacteristics": [
-      "Pale-blue introductory ground and quiet reading surfaces.",
-      "Self-hosted Manrope headings with practical system UI text.",
-      "A working annotation surface and an ordered visual example.",
-      "Distinct game imagery in softly rounded frames."
+      "Dark presentation surfaces and light reading surfaces.",
+      "Self-hosted Manrope throughout, with compact heavy headings and relaxed body leading.",
+      "Fine borders, modest rounded corners and clear selected states.",
+      "Artwork, complete game interfaces and genuine footage remain distinct media."
     ],
     "rules": [
       {
-        "name": "The Action and Annotation Rule",
-        "body": "Cobalt identifies actions and emphasis; vermilion identifies editorial marks and focus.",
+        "name": "The Local Theme Rule",
+        "body": "Controls inherit their surrounding theme: brass on charcoal, dark ink on paper. The fixed header and footer remain dark on the résumé.",
         "section": "colors"
       },
       {
-        "name": "The Two Roles Rule",
-        "body": "Manrope carries product identity and major headings; system UI type carries instructions, captions and controls.",
+        "name": "The Full Name Rule",
+        "body": "Wrap long project names and reduce display size before clipping or abbreviating them.",
         "section": "typography"
       },
       {
-        "name": "The Working Surface Rule",
-        "body": "Reserve ambient elevation for the working annotation surface; reading sections and product frames use tonal separation and borders.",
+        "name": "The Media Leads Rule",
+        "body": "Depth belongs to the work and the active modal. Surrounding interface surfaces use restrained borders and tonal separation.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "**Do** keep cobalt for actions and vermilion for editorial emphasis and visible focus.",
-      "**Do** retain Manrope for product identity and major headings, with system UI text for instructions and controls.",
-      "**Do** preserve complete instructional images and let the live demo follow its content height.",
-      "**Do** keep distinct game imagery within the calm surrounding product presentation.",
-      "**Do** preserve keyboard focus, mobile wrapping and reduced-motion scrolling."
+      "**Do** keep surrounding controls quieter than the artwork and footage.",
+      "**Do** use the local dark or paper theme consistently, including visible keyboard focus.",
+      "**Do** preserve complete screenshots and truthful distinctions between artwork, gameplay and development footage.",
+      "**Do** keep long titles, direct media links, keyboard navigation and reduced-motion behavior usable."
     ],
     "donts": [
-      "**Don't** turn the illustrative sample’s identity or typography into the product home’s design rules.",
-      "**Don't** add decorative motion or competing shadows to the working demo.",
-      "**Don't** replace the confirmed product identity with a personal portfolio or invented corporate identity."
+      "**Don't** apply this portfolio's charcoal-and-brass theme to the independent Drawply pages.",
+      "**Don't** turn generated composition references into project names, screenshots, store claims or footage.",
+      "**Don't** add automatic project rotation or competing decorative depth to the presentation."
     ]
   }
 }
