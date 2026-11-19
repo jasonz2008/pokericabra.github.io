@@ -61,7 +61,7 @@ a:focus-visible,button:focus-visible,iframe:focus-visible,video:focus-visible{ou
 .media-tab{min-height:40px;padding:8px 16px;border-radius:6px;background:transparent;color:var(--muted);font-size:14px;font-weight:650;transition:background-color .2s,color .2s}
 .media-tab:hover{color:var(--ink);background:var(--surface)}
 .media-tab.is-active{background:var(--accent);color:var(--bg)}
-.image-open{display:grid;place-items:center;width:44px;height:44px;border-radius:6px}
+.image-open{display:grid;place-items:center;width:44px;height:44px;border-radius:6px;margin-left:auto}
 .image-open:hover{background:var(--surface)}
 .image-open svg{width:18px;height:18px}
 .media-frame{position:relative;flex:1;min-height:280px;background:#162024;border-radius:12px;overflow:hidden}

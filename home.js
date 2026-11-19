@@ -32,7 +32,7 @@
     }
     const imageLink = element('image-open');
     imageLink.href = images[view].src;
-    imageLink.setAttribute('aria-label', `Enlarge ${active.name} ${view === 'art' ? 'artwork' : view === 'menu' ? 'menu' : 'gameplay screenshot'}`);
+    imageLink.setAttribute('aria-label', `Enlarge ${active.name} ${active.screenshotOnly ? 'main-page screenshot' : view === 'art' ? 'artwork' : view === 'menu' ? 'menu' : 'gameplay screenshot'}`);
     if (animate && !reduced.matches) panes[view].animate([{opacity:.45,clipPath:'inset(0 2% 0 2%)'},{opacity:1,clipPath:'inset(0)'}],{duration:380,easing:'cubic-bezier(.22,1,.36,1)'});
   }
   async function selectGame(id, {updateHash=true, animate=true} = {}) {
@@ -80,6 +80,9 @@
       store.firstChild.textContent = game.storeLabel;
     }
     const preview = element('gameplay-preview');
+    preview.hidden = !game.video;
+    element('watch-gameplay').hidden = !game.video;
+    document.querySelector('.media-controls').hidden = Boolean(game.screenshotOnly);
     const poster = element('gameplay-poster');
     poster.src = game.screenshot;
     poster.width = game.shotWidth;
@@ -89,7 +92,7 @@
     element('preview-duration').textContent = game.duration;
     element('watch-gameplay').setAttribute('aria-label', `Watch ${game.name} gameplay`);
     panel.setAttribute('aria-labelledby', `game-tab-${id}`);
-    setView(view, false);
+    setView(game.screenshotOnly ? 'screenshot' : view, false);
     panel.setAttribute('aria-busy', 'false');
     element('watch-gameplay').disabled = false;
     element('gameplay-preview').disabled = false;
@@ -123,7 +126,7 @@
   const dialog = element('video-dialog');
   const video = element('demo-video');
   function openVideo(event) {
-    if (!active || !dialog) return;
+    if (!active?.video || !dialog) return;
     lastVideoTrigger = event.currentTarget;
     element('video-title').textContent = `${active.name} · ${active.videoLabel}`;
     element('video-note').textContent = active.videoNote;
