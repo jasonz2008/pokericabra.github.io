@@ -53,7 +53,7 @@
     active = game;
     const title = element('game-title');
     title.textContent = game.name;
-    title.classList.toggle('long-title', game.name.length > 18);
+    title.classList.toggle('long-title', game.name.length > 14);
     element('game-status').replaceChildren(Object.assign(document.createElement('span'),{ariaHidden:'true'}),document.createTextNode(game.status));
     element('game-description').textContent = game.description;
     images.art.src = game.art;
