@@ -21,7 +21,7 @@
     if (image.complete) resolve();
   });
   function setView(next, animate = true) {
-    if (!active || !panes[next] || (next === 'menu' && !active.menu)) next = 'art';
+    if (!active?.[next] || !panes[next]) next = 'art';
     view = next;
     for (const [key,pane] of Object.entries(panes)) pane.hidden = key !== view;
     for (const tab of viewTabs) {
@@ -48,7 +48,7 @@
       tab.tabIndex = selected ? 0 : -1;
     }
     panel.setAttribute('aria-busy', 'true');
-    await Promise.all([warmImage(game.art),warmImage(game.screenshot)]);
+    await Promise.all([game.art, game.screenshot].filter(Boolean).map(warmImage));
     if (token !== changeToken) return;
     active = game;
     const title = element('game-title');
@@ -58,20 +58,21 @@
     element('game-description').textContent = game.description;
     images.art.src = game.art;
     images.art.alt = game.artAlt;
-    images.screenshot.src = game.screenshot;
-    images.screenshot.alt = game.screenshotAlt;
-    images.screenshot.width = game.shotWidth;
-    images.screenshot.height = game.shotHeight;
-    const menuTab = element('menu-tab');
-    menuTab.hidden = !game.menu;
-    if (game.menu) {
-      images.menu.src = game.menu;
-      images.menu.alt = game.menuAlt;
-      images.menu.width = 720;
-      images.menu.height = 1280;
-    } else {
-      images.menu.removeAttribute('src');
-      images.menu.alt = '';
+    for (const [key, widthKey, heightKey] of [
+      ['screenshot', 'shotWidth', 'shotHeight'],
+      ['menu', 'menuWidth', 'menuHeight'],
+    ]) {
+      const image = images[key];
+      element(`${key}-tab`).hidden = !game[key];
+      if (game[key]) {
+        image.src = game[key];
+        image.alt = game[`${key}Alt`];
+        image.width = game[widthKey];
+        image.height = game[heightKey];
+      } else {
+        image.removeAttribute('src');
+        image.alt = '';
+      }
     }
     const store = element('store-link');
     store.hidden = !game.store;
@@ -84,9 +85,14 @@
     element('watch-gameplay').hidden = !game.video;
     document.querySelector('.media-controls').hidden = Boolean(game.screenshotOnly);
     const poster = element('gameplay-poster');
-    poster.src = game.screenshot;
-    poster.width = game.shotWidth;
-    poster.height = game.shotHeight;
+    poster.src = game.screenshot || game.art;
+    if (game.screenshot) {
+      poster.width = game.shotWidth;
+      poster.height = game.shotHeight;
+    } else {
+      poster.removeAttribute('width');
+      poster.removeAttribute('height');
+    }
     preview.setAttribute('aria-label', `Watch ${game.name} gameplay`);
     element('preview-label').textContent = game.videoLabel;
     element('preview-duration').textContent = game.duration;
@@ -132,7 +138,7 @@
     element('video-note').textContent = active.videoNote;
     element('video-file').href = active.video;
     element('video-error').hidden = true;
-    video.poster = active.screenshot;
+    video.poster = active.screenshot || active.art;
     video.src = active.video;
     dialog.showModal();
     document.body.classList.add('modal-open');
